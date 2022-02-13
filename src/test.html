@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Тест"
+    })
+<body>
+    <style>
+        h1 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        hr {
+            margin-bottom: 50px;
+        }
+        .test {
+            font-size: 20px;
+            padding-top: 100px;
+        }
+        .done {
+            color: blueviolet;
+        }
+        .in-progress {
+            color: lightseagreen;
+        }
+    </style>
+    <div class="page-wrapper">
+        @@include('html/header.html', {})
+        <div class="page test">
+            <div class="container test">
+                <h1>Страницы:</h1>
+                <div class="in-progress"><a href="index.html">Главная</a></div>
+                <hr>
+                <h1>Модалки:</h1>
+                <div><a href="#" data-micromodal-trigger="modal-review">Modal Review</a></div>
+                <hr>
+            </div>
+        </div>
+        @@include('html/footer.html', {})
+    </div>
+    @@include('html/modal-review.html', {})
+    @@include('html/scripts.html', {})
+</body>
+</html>

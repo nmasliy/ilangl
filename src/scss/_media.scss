@@ -1,0 +1,45 @@
+@media screen and (max-width: 1160px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+
+@media screen and (max-width: $mobileBreakpoint) { 
+    .header {
+        &__menu {
+            padding: 60px 20px;
+        }
+        &__buttons {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        &__btn {
+            margin-left: 0;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .navigation {
+        ul {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (max-width: 768px) { 
+}
+
+@media screen and (max-width: 600px) {
+} 
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 400px) {
+}

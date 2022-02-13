@@ -1,0 +1,86 @@
+// *Pagination
+.pagination {
+    $offset: 8px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        margin: -$offset;
+
+        @media screen and (max-width: 480px) {
+            margin: -5px;
+        }
+    }
+
+    &__arrow {
+        margin: $offset;
+        &--prev {
+            margin-right: 50px;
+        }
+        &--next {
+            margin-left: 50px;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        @media screen and (max-width: $mobileBreakpoint) {
+            &--prev {
+                margin-right: 16px;
+            }
+            &--next {
+                margin-left: 16px;
+            }
+        }
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .35s ease;
+            &:hover {
+                
+            }
+        }
+    }
+
+    &__item {
+        margin: $offset;
+        border-radius: 4px;
+        line-height: normal;
+
+        @media screen and (max-width: 480px) {
+            margin: 5px;
+        }
+        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+        }
+        
+        &.active {
+            background-color: $primary;
+            color: $white;
+        }
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .35s ease;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    &__dots {
+        margin: $offset;
+        @media screen and (max-width: 480px) {
+            margin: 5px;
+        }
+    }
+}
+// */Pagination

@@ -1,0 +1,59 @@
+.header {
+    padding: 8px 0;
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+    &__navigation {
+        margin-right: auto;
+    }
+    
+    &__btn {
+        margin-left: 12px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__logo {
+        margin-right: 30px;
+    }
+}
+
+.navigation {
+    $offset: 16px;
+    & > ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -$offset;
+
+        & > li {
+            margin: $offset;
+            @media screen and (min-width: $mobileBreakpoint) {
+                transition: .3s ease;
+                &:hover {
+                    
+                }
+            }
+        }
+    }
+    a {
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 4px;
+        }
+    }
+}

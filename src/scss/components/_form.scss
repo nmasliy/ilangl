@@ -1,0 +1,109 @@
+.form {
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            margin-right: 12px;
+        }
+        a {
+            text-decoration-line: underline;
+            color: #3070A6;
+        }
+        input {
+            display: none;
+            &:checked ~ .form__checkbox-item {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__item {
+        color: rgba($main, .4);
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-caption {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__checkbox-item {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        border: 1px solid rgba(4, 26, 69, 0.1);
+        background-color: $white;
+        flex-shrink: 0;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .3s;
+            background: url('../img/check.svg') center no-repeat;
+        }
+    }
+
+    &__checkbox-text {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    &__input,
+    textarea {
+        display: inline-block;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 13px 16px;
+        font: inherit;
+        line-height: 1.2;
+        color: rgba($main, .8);
+        border: 1px solid rgba(4, 26, 69, 0.1);
+        border-radius: 5px;
+    
+        &::placeholder {
+            color: rgba($main, .5);
+        }
+        // *Дополнительные классы для валидации
+        &.invalid {
+            color: $red;
+            border-color: $red;
+    
+            &::placeholder {
+                color: $red;
+            }
+        }
+        &.valid {
+            color: $green;
+            border-color: $green;
+    
+            &::placeholder {
+                color: $green;
+            }
+        }
+    }
+    
+    textarea {
+        min-height: 128px;
+        padding: 16px 19px 16px 16px;
+    }
+
+}

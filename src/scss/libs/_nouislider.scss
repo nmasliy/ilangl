@@ -1,0 +1,94 @@
+/*! nouislider - 14.6.4 - 3/18/2021 */
+.noUi-target,
+.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.noUi-target {
+    position: relative;
+    height: 8px;
+    background-color: $white;
+    border: 1px solid #D1D9EA;
+    border-radius: 20px;
+}
+.noUi-base,
+.noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.noUi-connects {
+    overflow: hidden;
+    z-index: 0;
+}
+.noUi-connect,
+.noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform-style: flat;
+}
+.noUi-connect {
+    height: 100%;
+    width: 100%;
+    background-color: $primary;
+}
+.noUi-origin {
+    height: 10%;
+    width: 10%;
+}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+    left: 0;
+    right: auto;
+}
+.noUi-vertical .noUi-origin {
+    width: 0;
+}
+.noUi-horizontal .noUi-origin {
+    height: 0;
+}
+.noUi-handle {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    background: $primary;
+    border: 1px solid $white;
+    box-shadow: 0px 4px 14px rgba(18, 72, 119, 0.41);
+    width: 18px;
+    height: 18px;
+    cursor: grab;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.noUi-touch-area {
+    height: 100%;
+    width: 100%;
+}
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+.noUi-state-drag * {
+    cursor: inherit !important;
+}
+
+.noUi-horizontal .noUi-handle {
+    right: -2px;
+    top: -7px;
+}
