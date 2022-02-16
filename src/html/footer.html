@@ -1,29 +1,96 @@
 <footer class="footer">
-    <div class="container">
+    <div class="container container--sm">
         <div class="footer__inner">
-            <ul class="footer__socials">
-                <li>
-                    <a href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.2918 18.1246C13.8371 18.1246 17.9652 11.8719 17.9652 6.45118C17.9652 6.2754 17.9613 6.09572 17.9535 5.91993C18.7566 5.33918 19.4496 4.61985 20 3.79572C19.2521 4.12847 18.458 4.34579 17.6449 4.44025C18.5011 3.92706 19.1421 3.12086 19.4492 2.17111C18.6438 2.64843 17.763 2.98514 16.8445 3.16681C16.2257 2.50927 15.4075 2.0739 14.5164 1.92801C13.6253 1.78212 12.711 1.93384 11.9148 2.35971C11.1186 2.78559 10.4848 3.46189 10.1115 4.28406C9.73825 5.10623 9.64619 6.02848 9.84961 6.90822C8.21874 6.82638 6.62328 6.40272 5.16665 5.66472C3.71002 4.92671 2.42474 3.89083 1.39414 2.62423C0.870333 3.52734 0.710047 4.596 0.945859 5.61304C1.18167 6.63008 1.79589 7.51917 2.66367 8.09962C2.01219 8.07894 1.37498 7.90353 0.804688 7.5879V7.63868C0.804104 8.58643 1.13175 9.50512 1.73192 10.2386C2.3321 10.9721 3.16777 11.4751 4.09687 11.6621C3.49338 11.8272 2.85999 11.8513 2.2457 11.7324C2.50788 12.5475 3.01798 13.2604 3.70481 13.7716C4.39164 14.2828 5.22093 14.5668 6.07695 14.584C4.62369 15.7256 2.82848 16.3447 0.980469 16.3418C0.652739 16.3413 0.325333 16.3212 0 16.2817C1.87738 17.4861 4.06128 18.1258 6.2918 18.1246Z" fill="white"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z" fill="white"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="white"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__top">
+                <div class="footer__titles">
+                    <div class="footer__title title title--md">Resources and insights</div>
+                    <div class="footer__subtitle">The latest industry news, interviews and resources.</div>
+                </div>
+                <div class="footer__form">
+                    <form action="#">
+                        <input type="email" required placeholder="Enter your email" class="footer__input">
+                        <button class="footer__button">Subscribe</button>
+                    </form>
+                    <div class="footer__form-caption">We care about your data in our <a href="#">privacy policy</a></div>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <div class="footer__logo logo">
+                            <img src="@img/logo-white.svg" width="160" height="57" alt="">
+                        </div>
+                        <ul class="footer__socials">
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.2918 18.1246C13.8371 18.1246 17.9652 11.8719 17.9652 6.45118C17.9652 6.2754 17.9613 6.09572 17.9535 5.91993C18.7566 5.33918 19.4496 4.61985 20 3.79572C19.2521 4.12847 18.458 4.34579 17.6449 4.44025C18.5011 3.92706 19.1421 3.12086 19.4492 2.17111C18.6438 2.64843 17.763 2.98514 16.8445 3.16681C16.2257 2.50927 15.4075 2.0739 14.5164 1.92801C13.6253 1.78212 12.711 1.93384 11.9148 2.35971C11.1186 2.78559 10.4848 3.46189 10.1115 4.28406C9.73825 5.10623 9.64619 6.02848 9.84961 6.90822C8.21874 6.82638 6.62328 6.40272 5.16665 5.66472C3.71002 4.92671 2.42474 3.89083 1.39414 2.62423C0.870333 3.52734 0.710047 4.596 0.945859 5.61304C1.18167 6.63008 1.79589 7.51917 2.66367 8.09962C2.01219 8.07894 1.37498 7.90353 0.804688 7.5879V7.63868C0.804104 8.58643 1.13175 9.50512 1.73192 10.2386C2.3321 10.9721 3.16777 11.4751 4.09687 11.6621C3.49338 11.8272 2.85999 11.8513 2.2457 11.7324C2.50788 12.5475 3.01798 13.2604 3.70481 13.7716C4.39164 14.2828 5.22093 14.5668 6.07695 14.584C4.62369 15.7256 2.82848 16.3447 0.980469 16.3418C0.652739 16.3413 0.325333 16.3212 0 16.2817C1.87738 17.4861 4.06128 18.1258 6.2918 18.1246Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__list primary-list">
+                            <li><a href="#">Why iLangL</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__list primary-list">
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__contacts-item">
+                            <div class="footer__contacts-icon">
+                                <img src="@img/location.svg" alt="">
+                            </div>
+                            <div class="footer__contacts-info">
+                                <div class="footer__contacts-title">Ukraine</div>
+                                <div class="footer__contacts-text">Kiev, st. Vadim Getman 1B 03057</div>
+                            </div>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <div class="footer__contacts-icon">
+                                <img src="@img/location.svg" alt="">
+                            </div>
+                            <div class="footer__contacts-info">
+                                <div class="footer__contacts-title">Netherlands</div>
+                                <div class="footer__contacts-text">Amsterdam, <br> Keizersgracht 391 A 1016 EJ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-links">
+                    <a href="#" class="footer__bottom-link">Terms of Use</a>
+                    <a href="#" class="footer__bottom-link">Privacy policy</a>
+                </div>
+                <div class="footer__copy">©2021-2022 All rights reserved.</div>
+            </div>
         </div>
     </div>
 </footer>

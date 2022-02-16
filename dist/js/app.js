@@ -126,14 +126,14 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     function initTabs() {
-        const $tabs = document.querySelectorAll('[data-tab-title]');
+        const $tabs = document.querySelectorAll('[data-tab-button]');
     
         if (document.querySelector('[data-tab-container]')) {
             $tabs.forEach(tab => {
                 tab.addEventListener('click', function(e) {
                     e.preventDefault();
     
-                    const activeTab = document.querySelector('[data-tab-title].active');
+                    const activeTab = document.querySelector('[data-tab-button].active');
                     const activeContent = document.querySelector('[data-tab-content].active');
                     const id = tab.getAttribute('data-tab');
             
@@ -163,11 +163,71 @@ window.addEventListener('DOMContentLoaded', function() {
         
     }
 
+    function initIntegrationsSlider() {
+        if (document.querySelector('.integrations__slider')) {
+            const swiper = new Swiper('.integrations__slider', {
+                loop: true,
+                spaceBetween: 20,
+                slidesPerView: 4,
+                pagination: {
+                    el: '.integrations__pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.integrations__slider-next',
+                    prevEl: '.integrations__slider-prev',
+                },
+            });
+            
+        }
+    }
+
+    function initReviewsSlider() {
+        if (document.querySelector('.reviews__slider')) {
+            const swiper = new Swiper('.reviews__slider', {
+                loop: true,
+                pagination: {
+                    el: '.reviews__pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.reviews__slider-next',
+                    prevEl: '.reviews__slider-prev',
+                },
+            });
+            
+        }
+    }
+
+    function initSeoBox() {
+        const $btn = document.querySelector('.seo-box__btn');
+        const $hiddenItems = document.querySelector('.seo-box__hidden');
+
+        if ($btn && $hiddenItems) {
+            const textMore = $btn.dataset.textMore;
+            const textLess = $btn.dataset.textLess;
+
+            $btn.addEventListener('click', function(e) {
+
+                if ($hiddenItems.classList.contains('active')) {
+                    $hiddenItems.classList.remove('active');
+                    $btn.querySelector('span').textContent = textMore;
+                } else {
+                    $hiddenItems.classList.add('active');
+                    $btn.querySelector('span').textContent = textLess;
+                }
+            })
+        }
+    }
+
     isWebp();
+    disableTransitionBeforeLoad();
     initMenu();
     initModals();
     initAccordions();
     initMasks();
     initTabs();
-    disableTransitionBeforeLoad();
+    initIntegrationsSlider();
+    initReviewsSlider();
+    initSeoBox();
 })

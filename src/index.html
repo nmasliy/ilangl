@@ -8,7 +8,438 @@
             @@include('html/header.html', {})
             <div class="page">
                 <main class="main">
-                    
+                    <section class="hero hero-home">
+                        <div class="container">
+                            <div class="hero__inner">
+                                <div class="hero__content">
+                                    <h1 class="title title--lg hero__title">Top localization platform to automate website translations.</h1>
+                                    <div class="hero__text">
+                                        Expand into new markets by localization automation. <br> Connect your website to a translation platform via iLangL. 
+                                    </div>
+                                    <div class="hero__buttons">
+                                        <a href="#" class="btn btn--default btn--hover-white hero__btn">Get started</a>
+                                        <a href="#" class="btn btn--flex btn--outline btn--hover-white hero__btn">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="16" fill="white" fill-opacity="0.25"/>
+                                                <circle cx="16.0002" cy="16" r="12.6897" fill="white"/>
+                                                <path d="M20.9653 16L13.5171 20.3003L13.5171 11.6997L20.9653 16Z" fill="#247DFF"/>
+                                            </svg>
+                                            <span>Book demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hero__img hero-home__img">
+                                    <picture>
+                                        <source srcset="@img/hero-home.webp 1x, @img/hero-home@2x.webp 2x" type="image/webp">
+                                        <img width="713" height="409" src="@img/hero-home.png" srcset="@img/hero-home.png 1x, @img/hero-home@2x.png 2x" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="benefits section">
+                        <div class="container">
+                            <div class="benefits__inner">
+                                <h1 class="benefits__title title">Benefits</h1>
+                                <div class="benefits__subtitle subtitle">iLangL technology connects content management systems and CAT tools to speed up your international translations.</div>
+                                <ul class="benefits__list">
+                                    <li class="benefits__item">
+                                        <div class="benefits__icon">
+                                            <img width="25" height="25" src="@img/benefits-1.svg" alt="">
+                                        </div>
+                                        <div class="benefits__name">Flexibility</div>
+                                        <div class="benefits__text">
+                                            iLangL system covers the trickiest localization workflows. If you get website localization services from several agencies and need to run a bunch of content roundtrips, our platform will deal with it perfectly
+                                        </div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__icon">
+                                            <img width="25" height="25" src="@img/benefits-2.svg" alt="">
+                                        </div>
+                                        <div class="benefits__name">Continuous localization</div>
+                                        <div class="benefits__text">
+                                            Getting localization service, you require it won’t be interrupted considering marketing goals. Use automated content export and delivery to speed up the localization and get the product of translation promptly
+                                        </div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__icon">
+                                            <img width="25" height="25" src="@img/benefits-3.svg" alt="">
+                                        </div>
+                                        <div class="benefits__name">Technical support</div>
+                                        <div class="benefits__text">
+                                            iLangL team provides technical support to the end. You won’t have to install the product yourself. Our team will support you at every step of integration until your localization process is up and running
+                                        </div>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <div class="benefits__icon">
+                                            <img width="25" height="25" src="@img/benefits-4.svg" alt="">
+                                        </div>
+                                        <div class="benefits__name">Custom integrations</div>
+                                        <div class="benefits__text">
+                                            iLangL is integrated with various systems, including memoQ translation tool, Memsource, Contentful and others. iLangL can also integrate with any CAT for translation that your localization company uses to fully automate the localization process
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="integrations section">
+                        <div class="container">
+                            <div class="integrations__inner">
+                                <h1 class="integrations__title title">Integrations</h1>
+                                <div class="integrations__head">
+                                    <div class="integrations__subtitle subtitle">At the moment, we offer five CMS connectors and two CAT tools integrations. Use iLangL integration connectors to quickly transfer the content between the content management systems and translation platforms and reach your marketing goals in a flash.</div>
+                                    <a href="#" class="integrations__link btn-link">
+                                        <span>Learn more</span>
+                                        <img src="@img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="integrations__slider-wrapper">
+                                    <div class="integrations__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="integrations__item swiper-slide">
+                                                <img src="@img/optimizely.svg" alt="">
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <img src="@img/sitecore.svg" alt="">
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <picture>
+                                                    <source srcset="@img/contentful.webp 1x, @img/contentful@2x.webp 2x" type="image/webp">
+                                                    <img src="@img/contentful.png" srcset="@img/contentful.png 1x, @img/contentful.png@2x 2x" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <img src="@img/memoq.svg" alt="">
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <img src="@img/memsource.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination integrations__pagination"></div>
+                                    <div class="slider-arrows">
+                                        <div class="integrations__slider-prev slider-arrows__item slider-arrows__item--prev">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="36" height="36" rx="4.90909" fill="#DFECFF"/>
+                                                <path d="M24.9888 17.591H10.1933M10.1933 17.591L17.591 10.1932M10.1933 17.591L17.591 24.9887" stroke="#041A45" stroke-width="1.36636" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="integrations__slider-next slider-arrows__item slider-arrows__item--next">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="36" height="36" rx="4.90909" fill="#DFECFF"/>
+                                                <path d="M24.9888 17.591H10.1933M10.1933 17.591L17.591 10.1932M10.1933 17.591L17.591 24.9887" stroke="#041A45" stroke-width="1.36636" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="reviews section">
+                        <!-- TODO: modal -->
+                        <div class="container">
+                            <div class="reviews__inner">
+                                <h1 class="reviews__title title">Reviews</h1>
+                                <div class="reviews__subtitle subtitle">We simplify the localization process for our clients. What do customers say about our services?</div>
+                                <div class="reviews__slider-wrapper">
+                                    <div class="reviews__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="reviews__item swiper-slide">
+                                                <div class="reviews__item-head">
+                                                    <div class="reviews__img">
+                                                        <picture>
+                                                            <source srcset="@img/reviews-1.webp 1x, @img/reviews-1@2x.webp 2x" type="image/webp">
+                                                            <img width="112" height="112" src="@img/reviews-1.png" srcset="@img/reviews-1.png 1x, @img/reviews-1@2x.png 2x" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="reviews__info">
+                                                        <div class="reviews__name">Jasmin Schneider</div>
+                                                        <div class="reviews__position">Operations Director at The Translation People</div>
+                                                        <div class="reviews__rating">
+                                                            <ul>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star.svg" alt=""></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__text">We have been working with iLangl for quite some time now, and I have always found their service and Drupal connector to be impeccable. I am particularly impressed by their helpdesk team who are very knowledgeable, efficient and responsive. I would not hesitate to recommend them.</div>
+                                            </div>
+                                            <div class="reviews__item swiper-slide">
+                                                <div class="reviews__item-head">
+                                                    <div class="reviews__img">
+                                                        <picture>
+                                                            <source srcset="@img/reviews-1.webp 1x, @img/reviews-1@2x.webp 2x" type="image/webp">
+                                                            <img src="@img/reviews-1.png" srcset="@img/reviews-1.png 1x, @img/reviews-1@2x.png 2x" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="reviews__info">
+                                                        <div class="reviews__name">Jasmin Schneider</div>
+                                                        <div class="reviews__position">Operations Director at The Translation People</div>
+                                                        <div class="reviews__rating">
+                                                            <ul>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star.svg" alt=""></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__text">We have been working with iLangl for quite some time now, and I have always found their service and Drupal connector to be impeccable. I am particularly impressed by their helpdesk team who are very knowledgeable, efficient and responsive. I would not hesitate to recommend them.</div>
+                                            </div>
+                                            <div class="reviews__item swiper-slide">
+                                                <div class="reviews__item-head">
+                                                    <div class="reviews__img">
+                                                        <picture>
+                                                            <source srcset="@img/reviews-1.webp 1x, @img/reviews-1@2x.webp 2x" type="image/webp">
+                                                            <img src="@img/reviews-1.png" srcset="@img/reviews-1.png 1x, @img/reviews-1@2x.png 2x" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="reviews__info">
+                                                        <div class="reviews__name">Jasmin Schneider</div>
+                                                        <div class="reviews__position">Operations Director at The Translation People</div>
+                                                        <div class="reviews__rating">
+                                                            <ul>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img src="@img/star.svg" alt=""></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__text">We have been working with iLangl for quite some time now, and I have always found their service and Drupal connector to be impeccable. I am particularly impressed by their helpdesk team who are very knowledgeable, efficient and responsive. I would not hesitate to recommend them.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination reviews__pagination"></div>
+                                    <div class="slider-arrows">
+                                        <div class="reviews__slider-prev slider-arrows__item slider-arrows__item--prev">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="36" height="36" rx="4.90909" fill="#DFECFF"/>
+                                                <path d="M24.9888 17.591H10.1933M10.1933 17.591L17.591 10.1932M10.1933 17.591L17.591 24.9887" stroke="#041A45" stroke-width="1.36636" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="reviews__slider-next slider-arrows__item slider-arrows__item--next">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="36" height="36" rx="4.90909" fill="#DFECFF"/>
+                                                <path d="M24.9888 17.591H10.1933M10.1933 17.591L17.591 10.1932M10.1933 17.591L17.591 24.9887" stroke="#041A45" stroke-width="1.36636" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="lead section">
+                        <div class="container">
+                            <div class="lead__inner">
+                                <h1 class="lead__title title">It’s time to automate your translation process and shorten your time to market!</h1>
+                                <div class="lead__subtitle">Try our online demo platform for frees</div>
+                                <div class="lead__buttons">
+                                    <a href="#" class="btn btn--default btn--hover-white lead__btn">Get started</a>
+                                    <a href="#" class="btn btn--flex btn--outline btn--hover-white lead__btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="16" fill="white" fill-opacity="0.25"/>
+                                            <circle cx="16.0002" cy="16" r="12.6897" fill="white"/>
+                                            <path d="M20.9653 16L13.5171 20.3003L13.5171 11.6997L20.9653 16Z" fill="#247DFF"/>
+                                        </svg>
+                                        <span>Book demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="how section">
+                        <div class="container">
+                            <div class="how__inner">
+                                <h1 class="how__title title">How it works</h1>
+                                <div class="how__subtitle subtitle">iLangL Localization Hub is an advanced system that is easy to use. Let’s find out how it works. </div>
+                                <div class="how__tabs how-tabs" data-tab-container>
+                                    <div class="how-tabs__buttons">
+                                        <div class="how-tabs__btn active" data-tab-button data-tab="1">
+                                            <div class="how-tabs__btn-num">01</div>
+                                            <div class="how-tabs__btn-title">Connect your website to the iLangL Localization Hub</div>
+                                        </div>
+                                        <div class="how-tabs__btn" data-tab-button data-tab="2">
+                                            <div class="how-tabs__btn-num">02</div>
+                                            <div class="how-tabs__btn-title">Customize your localization workflow</div>
+                                        </div>
+                                        <div class="how-tabs__btn" data-tab-button data-tab="3">
+                                            <div class="how-tabs__btn-num">03</div>
+                                            <div class="how-tabs__btn-title">Send the content for translation to the CAT tool</div>
+                                        </div>
+                                        <div class="how-tabs__btn" data-tab-button data-tab="4">
+                                            <div class="how-tabs__btn-num">04</div>
+                                            <div class="how-tabs__btn-title">Deliver the translated content to your website</div>
+                                        </div>
+                                        <div class="how-tabs__btn" data-tab-button data-tab="5">
+                                            <div class="how-tabs__btn-num">05</div>
+                                            <div class="how-tabs__btn-title">Publish the content or ask for amendments</div>
+                                        </div>
+                                    </div>
+                                    <div class="how-tabs__content">
+                                        <div class="how-tabs__content-item active" data-tab-content data-tab="1">
+                                            <div class="how-tabs__img">
+                                                <picture>
+                                                    <source srcset="@img/how-works-tab-1.webp 1x, @img/how-works-tab-1@2x.webp 2x" type="image/webp">
+                                                    <img width="656" height="367" src="@img/how-works-tab-1.png" srcset="@img/how-works-tab-1.png 1x, @img/how-works-tab-1@2x.png 2x" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="how-tabs__text">
+                                                With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                            </div>
+                                            <a href="#" class="how-tabs__link btn-link">
+                                                <span>Get started</span>
+                                                <img src="@img/arrow.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="2">
+                                            <div class="how-tabs__img">
+                                                <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
+                                            </div>
+                                            <div class="how-tabs__text">
+                                                2With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                            </div>
+                                            <a href="#" class="how-tabs__link btn-link">
+                                                <span>Get started</span>
+                                                <img width="14" height="10" src="@img/arrow.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="3">
+                                            <div class="how-tabs__img">
+                                                <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
+                                            </div>
+                                            <div class="how-tabs__text">
+                                                3With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                            </div>
+                                            <a href="#" class="how-tabs__link btn-link">
+                                                <span>Get started</span>
+                                                <img width="14" height="10" src="@img/arrow.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="4">
+                                            <div class="how-tabs__img">
+                                                <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
+                                            </div>
+                                            <div class="how-tabs__text">
+                                                4With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                            </div>
+                                            <a href="#" class="how-tabs__link btn-link">
+                                                <span>Get started</span>
+                                                <img width="14" height="10" src="@img/arrow.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="5">
+                                            <div class="how-tabs__img">
+                                                <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
+                                            </div>
+                                            <div class="how-tabs__text">
+                                                5With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                            </div>
+                                            <a href="#" class="how-tabs__link btn-link">
+                                                <span>Get started</span>
+                                                <img width="14" height="10" src="@img/arrow.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="seo-box section" id="seo-box">
+                        <div class="container">
+                            <div class="seo-box__inner">
+                                <div class="seo-box__img">
+                                    <picture>
+                                        <source srcset="@img/seo-box.webp 1x, @img/seo-box@2x.webp 2x" type="image/webp">
+                                        <img width="505" height="382" src="@img/seo-box.jpg" srcset="@img/seo-box.jpg 1x, @img/seo-box@2x.jpg 2x" alt="">
+                                    </picture>
+                                </div>
+                                <div class="seo-box__content">
+                                    <h3 class="seo-box__title title">Finest service for automated website localization</h3>
+                                    <div class="seo-box__block-wrapper">
+                                        <div class="seo-box__block">
+                                            To manage your website localization quickly and easily, consider the most innovative technologies to automate some manual repetitive tasks. With iLangL Localization Hub, you will forget about tedious copying and pasting. We developed one of the most reliable and customizable connectors online.
+                                        </div>
+                                    </div>
+                                    <div class="seo-box__hidden">
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Linking websites and CAT tools</div>
+                                            Applying for language service to an agency, you need to establish a steady connection between your CMS and the LSP’s CAT tool for data transferring. We can manage that. Our team will link your website with the translation tool and apply settings so that the content is transferred correctly. If you have a custom system, it’s not a problem. Our developers will build a custom solution for you. 
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Securing data</div>
+                                            In case you manage translations internally and receive language services from an agency, you can set up separate projects on our platform. That way, your internal data will be secured. Users from separate projects can't see each other on the portal. 
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Covering diverse workflows</div>
+                                            In the Localization Hub, you can create separate services to cover various marketing goals. If you are eager to reach the market double time, set up a “Machine translation” service if your agency’s app for localization supports this option. In case you require a high-quality marketing translation, create a service with several workflow steps to better review the content. The system will manage any scenario.
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Processing content data</div>
+                                            Most online translators can not filter unnecessary data from websites, but our platform can.During data transfer, we hide sensitive information from the linguists to prevent its destruction. iLangL ensures the translated content will get in the corresponding place on the website. 
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Scaling the system</div>
+                                            The amount of content and languages are not important for our platform, as we built a scalable solution. You can transfer an extensive amount of data via Localization Hub. Such a solution especially fits big international companies with high marketing ambitions.
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Speeding up the website localization</div>
+                                            For international companies, it is crucial that the website content is up-to-date in every language. To reach your marketing goals, you ought to boost the process, and automation is one of the ways of doing this. Don’t waste time sending numerous files manually anymore. Get iLangL platform instead.  
+                                        </div>
+                                        <div class="seo-box__block">
+                                            <div class="seo-box__subtitle">Connecting various tools</div>
+                                            iLangL platform can be connected with various tools for localization. These can be tools for invoicing, CAT tools, e-commerce, and PIMs systems. In the Localization Hub, each tool is linked to a specific workflow step. For instance, you can link the PIM system to the evaluation step and the CAT tool to the translation step.  
+                                        </div>
+                                    </div>
+                                    <a href="#seo-box" class="seo-box__btn btn-link" data-text-more="Learn more" data-text-less="Hide text">
+                                        <span>Learn more</span>
+                                        <img src="@img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="lead-footer section">
+                        <div class="container container--sm">
+                            <div class="lead-footer__inner">
+                                <div class="lead-footer__content">
+                                    <h3 class="lead-footer__title title">Manage your translations faster with Localization Hub.</h3>
+                                    <div class="lead-footer__subtitle">Get in touch to discuss the connectors or <strong>try the platform for free! </strong></div>
+                                    <div class="lead-footer__buttons">
+                                        <a href="#" class="btn btn--default btn--hover-white lead-footer__btn">Get started</a>
+                                        <a href="#" class="btn btn--flex btn--outline btn--hover-white lead-footer__btn">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="16" cy="16" r="16" fill="white" fill-opacity="0.25"/>
+                                                <circle cx="16.0002" cy="16" r="12.6897" fill="white"/>
+                                                <path d="M20.9653 16L13.5171 20.3003L13.5171 11.6997L20.9653 16Z" fill="#247DFF"/>
+                                            </svg>
+                                            <span>Book demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lead-footer__img">
+                                    <img src="@img/lead.svg" width="423" height="317" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </main>
             </div>
             @@include('html/footer.html', {})

@@ -1,0 +1,46 @@
+.seo-box {
+
+    &__hidden {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        width: 41%;
+    }
+
+    &__content {
+        padding-top: 10px;
+        width: calc(59% - 124px);
+        margin-left: 124px;
+    }
+
+    &__title {
+    }
+
+    &__block {
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__block-wrapper {
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: rgba($main, .8);
+    }
+
+    &__btn {
+    }
+}

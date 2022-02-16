@@ -1,34 +1,38 @@
-import webp from "gulp-webp";
 import imagemin from "gulp-imagemin";
+import webp from "gulp-webp";
 
 export const images = () => {
 	return app.gulp.src(app.path.src.images)
 		.pipe(app.plugins.plumber())
 		.pipe(app.plugins.newer(app.path.build.images))
-		.pipe(
-			app.plugins.gulpIf(
-				app.isBuild,
-				webp()
-			)
-		)
-		.pipe(
-			app.plugins.gulpIf(
-				app.isBuild,
-				app.gulp.dest(app.path.build.images)
-			)
-		)
-		.pipe(
-			app.plugins.gulpIf(
-				app.isBuild,
-				app.gulp.src(app.path.src.images)
-			)
-		)
-		.pipe(
-			app.plugins.gulpIf(
-				app.isBuild,
-				app.plugins.newer(app.path.build.images)
-			)
-		)
+		.pipe(webp())
+		.pipe(app.gulp.dest(app.path.build.images))
+		.pipe(app.gulp.src(app.path.src.images))
+
+		// .pipe(
+		// 	app.plugins.gulpIf(
+		// 		app.isBuild,
+		// 		webp()
+		// 	)
+		// )
+		// .pipe(
+		// 	app.plugins.gulpIf(
+		// 		app.isBuild,
+		// 		app.gulp.dest(app.path.build.images)
+		// 	)
+		// )
+		// .pipe(
+		// 	app.plugins.gulpIf(
+		// 		app.isBuild,
+		// 		app.gulp.src(app.path.src.images)
+		// 	)
+		// )
+		// .pipe(
+		// 	app.plugins.gulpIf(
+		// 		app.isBuild,
+		// 		app.plugins.newer(app.path.build.images)
+		// 	)
+		// )
 		.pipe(
 			app.plugins.gulpIf(
 				app.isBuild,

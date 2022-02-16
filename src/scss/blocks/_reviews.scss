@@ -1,0 +1,100 @@
+.reviews {
+
+    &__inner {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+    }
+
+    &__slider-wrapper {
+        position: relative;
+    }
+    
+    &__slider {
+        padding-bottom: 40px;
+    }
+    
+    &__item {
+        background: url('../img/quotes-bg.svg') right 115px top 85px no-repeat;
+        padding: 90px 104px 108px 104px;
+        border-radius: 10px;
+        background-color: $lightblue;
+    }
+
+    &__item-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        position: relative;
+        margin-right: 50px;
+        img {
+            border-radius: 50%;
+            width: 112px;
+            height: 112px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            background: url('../img/quotes.svg') center no-repeat;
+            background-color: $green;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            right: -7px;
+            bottom: 7px;
+        }
+    }
+
+    &__info {
+
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    &__position {
+        color: rgba($main, .8);
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-style: italic;
+        color: rgba($main, .8);
+    }
+
+    &__rating {
+        ul {
+            display: flex;
+            margin: 0 -3px;
+        }
+        li {
+            margin: 0 3px;
+        }
+    }
+    
+    &__slider-prev {
+        transform: translateY(calc(-50% - 40px));
+    }
+    &__slider-next {
+        transform: translateY(calc(-50% - 40px)) rotate(180deg);
+    }
+    
+    // Swiper
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        margin: 0 8px;
+    }
+}

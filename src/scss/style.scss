@@ -1,9 +1,13 @@
-// *Base
-@import 'custom-reset';
-@import 'config';
+// *Vars
+@import 'vars';
 
 // *Libs
 @import 'libs/nouislider';
+@import 'libs/swiper-bundle.min';
+
+// *Base
+@import 'custom-reset';
+@import 'config';
 
 // *Components
 @import 'components/buttons';
@@ -15,6 +19,13 @@
 // *Blocks
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/benefits';
+@import 'blocks/integrations';
+@import 'blocks/reviews';
+@import 'blocks/lead';
+@import 'blocks/how';
+@import 'blocks/seo-box';
+@import 'blocks/lead-footer';
 @import 'blocks/footer';
 
 // *Media

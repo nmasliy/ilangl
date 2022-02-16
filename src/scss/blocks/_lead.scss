@@ -1,0 +1,28 @@
+.lead {
+    color: $white;
+    padding: 120px 0;
+    margin: 70px 0;
+    background: url('../img/hero-bg.jpg') center / cover no-repeat;
+
+    &__inner {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin: -10px;
+    }
+    &__btn {
+        margin: 10px;
+    }
+}

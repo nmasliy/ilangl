@@ -1,25 +1,32 @@
 // *Buttons
 .btn {
     display: inline-block;
-    padding: 18px 30px;
+    padding: 19px 30px;
     text-align: center;
     cursor: pointer;
-    white-space: break-spaces;
     border: 1px solid transparent;
     border-radius: 100px;
-    font-weight: 800;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: normal;
     min-width: 203px;
 
     @media screen and (min-width: $mobileBreakpoint)  {
         transition: .35s ease;
-        path, svg {
+        circle {
             transition: .35s ease;
+        }
+        &:hover {
+            circle:nth-child(1) {
+                fill: rgba(36, 125, 255, 0.1);
+            }
+            circle:nth-child(2) {
+                fill: rgba($secondary, 0.2);
+            }
         }
     }
 
-    &__img {
+    & > svg {
         margin-right: 12px;
     }
 
@@ -27,29 +34,32 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 19px 40px;
+        padding: 13px 30px;
     }
 
     &--default {
         background-color: $primary;
-
-        @media screen and (min-width: $mobileBreakpoint) {
-            &:hover {
-            }
-        }
+        color: $main;
     }
 
     &--outline {
-        border-color: rgba(4, 26, 69, 0.15);
-        @media screen and (min-width: $mobileBreakpoint) {
-            &:hover {
-            }
-        }
+        border-color: $white;
     }
 
-    &--hover-white {}
-    &--hover-primary {}
-    &--hover-secondary {}
+    &--hover-white {
+        &:hover {
+            border-color: transparent;
+            background-color: $white;
+            color: $secondary;
+        }
+    }
+    
+    &--hover-secondary {
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
 
     &--wide {
         width: 100%;
@@ -65,22 +75,21 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
+    color: $secondary;
+    cursor: pointer;
 
     @media screen and (min-width: $mobileBreakpoint) {
-        &__img {
-            transition: .3s ease;
-        }
+        transition: .35s ease;
         &:hover {
-            .btn-link__img {
-            }
             span {
+                text-decoration: underline;
             }
         }
     }
 
-    &__img {
+    & > img {
         flex-shrink: 0;
-        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 

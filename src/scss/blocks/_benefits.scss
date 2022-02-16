@@ -1,0 +1,50 @@
+.benefits {
+
+    &__subtitle {
+        max-width: 512px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    &__item {
+        background-color: $lightblue;
+        margin: 10px;
+        padding: 42px 55px 45px 55px;
+        border-radius: 10px; 
+        width: calc(50% - 20px);
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        background: $white;
+        border: 7px solid rgba(255, 255, 255, 0.25);
+        margin-bottom: 20px;
+        border-radius: 50%;
+        &--big {
+
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        color: rgba($main, .8);
+        font-size: 14px;
+    }
+}

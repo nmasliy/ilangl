@@ -1,5 +1,5 @@
 import fileInclude from "gulp-file-include";
-import webpHtmlNosvg from "gulp-webp-html-nosvg";
+// import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 
 export const html = () => {
@@ -7,12 +7,12 @@ export const html = () => {
         .pipe(app.plugins.plumber())
         .pipe(fileInclude())
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
-        .pipe(
-            app.plugins.gulpIf(
-                app.isBuild,
-                webpHtmlNosvg()
-            )
-        )
+        // .pipe(
+        //     app.plugins.gulpIf(
+        //         app.isBuild,
+        //         webpHtmlNosvg()
+        //     )
+        // )
         .pipe(
             app.plugins.gulpIf(
                 app.isBuild,

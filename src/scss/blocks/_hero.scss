@@ -1,3 +1,47 @@
 .hero {
-    
+    background: url('../img/hero-bg.jpg') center / cover no-repeat;
+    color: $white;
+    padding: 170px 0;
+    margin-bottom: 70px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 523px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    &__btn {
+        margin: 10px;
+    }
+
+    &__img {
+        width: 50%;
+        position: relative;
+    }
+}
+
+.hero-home {
+    &__img {
+        width: 75%;
+        right: -65px;
+        text-align: right;
+    }
 }

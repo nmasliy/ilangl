@@ -1,0 +1,39 @@
+.lead-footer {
+    background-color: #11305E;
+    color: $white;
+    padding: 120px 0;
+    margin-top: 70px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        width: 52%;
+    }
+
+    &__subtitle {
+        margin-bottom: 42px;
+        font-size: 16px;
+        b, strong {
+            font-weight: 700;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        margin: -10px;
+    }
+
+    &__btn {
+        margin: 10px;
+    }
+
+    &__img {
+        width: calc(48% - 67px);
+        margin-left: 67px;
+        text-align: center;
+    }
+}
