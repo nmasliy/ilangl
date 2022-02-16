@@ -16,7 +16,7 @@
                                     <div class="hero__text">
                                         Expand into new markets by localization automation. <br> Connect your website to a translation platform via iLangL. 
                                     </div>
-                                    <div class="hero__buttons">
+                                    <div class="hero__buttons" data-da=".hero__inner,768,last">
                                         <a href="#" class="btn btn--default btn--hover-white hero__btn">Get started</a>
                                         <a href="#" class="btn btn--flex btn--outline btn--hover-white hero__btn">
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,10 +29,18 @@
                                     </div>
                                 </div>
                                 <div class="hero__img hero-home__img">
-                                    <picture>
-                                        <source srcset="@img/hero-home.webp 1x, @img/hero-home@2x.webp 2x" type="image/webp">
-                                        <img width="713" height="409" src="@img/hero-home.png" srcset="@img/hero-home.png 1x, @img/hero-home@2x.png 2x" alt="">
-                                    </picture>
+                                    <div class="hero__img-forward">
+                                        <picture>
+                                            <source srcset="@img/hero-home.webp 1x, @img/hero-home@2x.webp 2x" type="image/webp">
+                                            <img width="713" height="409" src="@img/hero-home.png" srcset="@img/hero-home.png 1x, @img/hero-home@2x.png 2x" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="hero__img-back">
+                                        <picture>
+                                            <source srcset="@img/hero-home.webp 1x, @img/hero-home@2x.webp 2x" type="image/webp">
+                                            <img width="713" height="409" src="@img/hero-home.png" srcset="@img/hero-home.png 1x, @img/hero-home@2x.png 2x" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +148,6 @@
                     </section>
 
                     <section class="reviews section">
-                        <!-- TODO: modal -->
                         <div class="container">
                             <div class="reviews__inner">
                                 <h1 class="reviews__title title">Reviews</h1>
@@ -176,25 +183,31 @@
                                                 <div class="reviews__item-head">
                                                     <div class="reviews__img">
                                                         <picture>
-                                                            <source srcset="@img/reviews-1.webp 1x, @img/reviews-1@2x.webp 2x" type="image/webp">
-                                                            <img src="@img/reviews-1.png" srcset="@img/reviews-1.png 1x, @img/reviews-1@2x.png 2x" alt="">
+                                                            <source srcset="@img/reviews-2.webp 1x, @img/reviews-2@2x.webp 2x" type="image/webp">
+                                                            <img src="@img/reviews-2.png" srcset="@img/reviews-2.png 1x, @img/reviews-2@2x.png 2x" alt="">
                                                         </picture>
                                                     </div>
                                                     <div class="reviews__info">
-                                                        <div class="reviews__name">Jasmin Schneider</div>
-                                                        <div class="reviews__position">Operations Director at The Translation People</div>
+                                                        <div class="reviews__name">Robert Etches</div>
+                                                        <div class="reviews__position">CEO at TextMinded Denmark</div>
                                                         <div class="reviews__rating">
                                                             <ul>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="reviews__text">We have been working with iLangl for quite some time now, and I have always found their service and Drupal connector to be impeccable. I am particularly impressed by their helpdesk team who are very knowledgeable, efficient and responsive. I would not hesitate to recommend them.</div>
+                                                <div class="reviews__text">
+                                                    In this extremely exciting new era of multilingual communication, a 101 new language technology options are opening up, and a modern multilingual solutions company has to decide whether to develop its own versions – to become an expert in each of these many new fields – or team up with partners with the necessary know-how.TextMinded® is convinced that, no matter how innovative and successful we are, we will never be able to develop all of these options for our clients in our own Innovation Department. Instead, we pursue a strategy of linking up with “best-of-breed” in the various fields of language technology. When it comes to connecting systems and building intelligent workflows, the decision was an easy one: iLangL is in a league of its own, both as regards its standard iLangL Cloud and in the ability to join forces with us to create unique products for TextMinded’s clients. We are proud to team up with iLangL, which is quickly becoming not only a pivotal player in our Strategic Partner Programme, but also a central part of our sales initiatives
+                                                </div>
+                                                <a href="#" class="reviews__btn btn-link" data-micromodal-trigger="modal-review">
+                                                    <span>Learn more</span>
+                                                    <img src="@img/arrow.svg" alt="">
+                                                </a>
                                             </div>
                                             <div class="reviews__item swiper-slide">
                                                 <div class="reviews__item-head">
@@ -209,11 +222,11 @@
                                                         <div class="reviews__position">Operations Director at The Translation People</div>
                                                         <div class="reviews__rating">
                                                             <ul>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star-filled.svg" alt=""></li>
-                                                                <li><img src="@img/star.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="@img/star.svg" alt=""></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -269,29 +282,39 @@
                                 <div class="how__subtitle subtitle">iLangL Localization Hub is an advanced system that is easy to use. Let’s find out how it works. </div>
                                 <div class="how__tabs how-tabs" data-tab-container>
                                     <div class="how-tabs__buttons">
-                                        <div class="how-tabs__btn active" data-tab-button data-tab="1">
-                                            <div class="how-tabs__btn-num">01</div>
-                                            <div class="how-tabs__btn-title">Connect your website to the iLangL Localization Hub</div>
+                                        <div class="how-tabs__item how-tabs__item--1">
+                                            <div class="how-tabs__btn active" data-tab-button data-tab="1">
+                                                <div class="how-tabs__btn-num">01</div>
+                                                <div class="how-tabs__btn-title">Connect your website to the iLangL Localization Hub</div>
+                                            </div>
                                         </div>
-                                        <div class="how-tabs__btn" data-tab-button data-tab="2">
-                                            <div class="how-tabs__btn-num">02</div>
-                                            <div class="how-tabs__btn-title">Customize your localization workflow</div>
+                                        <div class="how-tabs__item how-tabs__item--2">
+                                            <div class="how-tabs__btn" data-tab-button data-tab="2">
+                                                <div class="how-tabs__btn-num">02</div>
+                                                <div class="how-tabs__btn-title">Customize your localization workflow</div>
+                                            </div>
                                         </div>
-                                        <div class="how-tabs__btn" data-tab-button data-tab="3">
-                                            <div class="how-tabs__btn-num">03</div>
-                                            <div class="how-tabs__btn-title">Send the content for translation to the CAT tool</div>
+                                        <div class="how-tabs__item how-tabs__item--3">
+                                            <div class="how-tabs__btn" data-tab-button data-tab="3">
+                                                <div class="how-tabs__btn-num">03</div>
+                                                <div class="how-tabs__btn-title">Send the content for translation to the CAT tool</div>
+                                            </div>
                                         </div>
-                                        <div class="how-tabs__btn" data-tab-button data-tab="4">
-                                            <div class="how-tabs__btn-num">04</div>
-                                            <div class="how-tabs__btn-title">Deliver the translated content to your website</div>
+                                        <div class="how-tabs__item how-tabs__item--4">
+                                            <div class="how-tabs__btn" data-tab-button data-tab="4">
+                                                <div class="how-tabs__btn-num">04</div>
+                                                <div class="how-tabs__btn-title">Deliver the translated content to your website</div>
+                                            </div>
                                         </div>
-                                        <div class="how-tabs__btn" data-tab-button data-tab="5">
-                                            <div class="how-tabs__btn-num">05</div>
-                                            <div class="how-tabs__btn-title">Publish the content or ask for amendments</div>
+                                        <div class="how-tabs__item  how-tabs__item--5">
+                                            <div class="how-tabs__btn" data-tab-button data-tab="5">
+                                                <div class="how-tabs__btn-num">05</div>
+                                                <div class="how-tabs__btn-title">Publish the content or ask for amendments</div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="how-tabs__content">
-                                        <div class="how-tabs__content-item active" data-tab-content data-tab="1">
+                                        <div class="how-tabs__content-item active" data-tab-content data-tab="1" data-da=".how-tabs__item--1,768,last">
                                             <div class="how-tabs__img">
                                                 <picture>
                                                     <source srcset="@img/how-works-tab-1.webp 1x, @img/how-works-tab-1@2x.webp 2x" type="image/webp">
@@ -306,7 +329,7 @@
                                                 <img src="@img/arrow.svg" alt="">
                                             </a>
                                         </div>
-                                        <div class="how-tabs__content-item" data-tab-content data-tab="2">
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="2" data-da=".how-tabs__item--2,768,last">
                                             <div class="how-tabs__img">
                                                 <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
                                             </div>
@@ -318,7 +341,7 @@
                                                 <img width="14" height="10" src="@img/arrow.svg" alt="">
                                             </a>
                                         </div>
-                                        <div class="how-tabs__content-item" data-tab-content data-tab="3">
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="3" data-da=".how-tabs__item--3,768,last">
                                             <div class="how-tabs__img">
                                                 <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
                                             </div>
@@ -330,7 +353,7 @@
                                                 <img width="14" height="10" src="@img/arrow.svg" alt="">
                                             </a>
                                         </div>
-                                        <div class="how-tabs__content-item" data-tab-content data-tab="4">
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="4" data-da=".how-tabs__item--4,768,last">
                                             <div class="how-tabs__img">
                                                 <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
                                             </div>
@@ -342,7 +365,7 @@
                                                 <img width="14" height="10" src="@img/arrow.svg" alt="">
                                             </a>
                                         </div>
-                                        <div class="how-tabs__content-item" data-tab-content data-tab="5">
+                                        <div class="how-tabs__content-item" data-tab-content data-tab="5" data-da=".how-tabs__item--5,768,last">
                                             <div class="how-tabs__img">
                                                 <img width="656" height="367" src="@img/how-works-tab-1.png" alt="">
                                             </div>
@@ -363,7 +386,7 @@
                     <section class="seo-box section" id="seo-box">
                         <div class="container">
                             <div class="seo-box__inner">
-                                <div class="seo-box__img">
+                                <div class="seo-box__img" data-da=".seo-box__content,768,1">
                                     <picture>
                                         <source srcset="@img/seo-box.webp 1x, @img/seo-box@2x.webp 2x" type="image/webp">
                                         <img width="505" height="382" src="@img/seo-box.jpg" srcset="@img/seo-box.jpg 1x, @img/seo-box@2x.jpg 2x" alt="">
@@ -444,6 +467,7 @@
             </div>
             @@include('html/footer.html', {})
         </div>
+        @@include('html/modal-review.html', {})
         @@include('html/scripts.html', {})
     </body>
 </html>

@@ -166,6 +166,7 @@ p {
     background-color: $secondary;
 }
 .slider-arrows {
+    overflow: hidden;
     &__item {
         position: absolute;
         top: 50%;

@@ -20,8 +20,8 @@
 
     &__close {
         position: absolute;
-        right: 15px;
-        top: 15px;
+        right: 30px;
+        top: 24px;
         z-index: 4;
         display: none;
         @media screen and (max-width: $mobileBreakpoint) {
@@ -33,10 +33,11 @@
         display: none;
         span {
             display: block;
-            width: 24px;
-            height: 2px;
+            width: 26px;
+            height: 3px;
             background-color: $main;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
+            border-radius: 10px;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -50,14 +51,16 @@
     @media screen and (max-width: $mobileBreakpoint) {
         .header__menu {
             display: none;
+            flex-direction: column;
+            align-items: flex-start;
             position: fixed;
             right: 0;
             top: 0;
-            width: calc(100% - 40px);
-            max-width: 360px;
+            width:  228px;
             height: 100%;
             z-index: 7;
             background-color: $white;
+            overflow: auto;
             transition: .35s ease; 
             transform: translateX(150%);
         }

@@ -2,7 +2,6 @@
 
     &__head {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 40px;
@@ -29,5 +28,10 @@
         padding: 5px;
         background-color: $white;
         height: 160px;
+    }
+
+    &__link {
+        flex-shrink: 0;
+        margin-left: 20px;
     }
 }

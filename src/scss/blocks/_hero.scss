@@ -1,5 +1,7 @@
 .hero {
-    background: url('../img/hero-bg.jpg') center / cover no-repeat;
+    background: url('../img/bg-elem-1.svg') top left no-repeat,
+                url('../img/bg-elem-2.svg') bottom 19px right no-repeat,
+                url('../img/hero-bg.jpg') center / cover no-repeat;
     color: $white;
     padding: 170px 0;
     margin-bottom: 70px;
@@ -33,8 +35,25 @@
     }
 
     &__img {
+        position: relative;
         width: 50%;
         position: relative;
+    }
+
+    &__img-forward {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__img-back {
+        position: absolute;
+        right: -18px;
+        top: -18px;
+        img {
+            opacity: 0.2;
+            filter: blur(3.7365px);
+            border-radius: 9px;
+        }
     }
 }
 

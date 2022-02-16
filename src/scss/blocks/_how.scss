@@ -1,21 +1,12 @@
 .how {
-
-    &__inner {
-    }
-
-    &__title {
-    }
-
     &__subtitle {
         margin-bottom: 40px;
-    }
-
-    &__tabs {
     }
 }
 
 .how-tabs {
     display: flex;
+    flex-wrap: wrap;
 
     &__buttons {
         width: 40%;
@@ -23,7 +14,7 @@
 
     &__btn {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         border-radius: 3px;
         background-color: $lightblue;
         border-left: 6px solid $secondary;
@@ -35,11 +26,14 @@
         opacity: 0.5;
         margin-bottom: 20px;
         cursor: pointer;
-        &:last-child {
-            margin-bottom: 0;
-        }
+        
         &.active {
-            opacity: 01;
+            opacity: 1;
+        }
+    }
+    &__item:last-child {
+        .how-tabs__btn {
+            margin-bottom: 0;
         }
     }
 
@@ -48,15 +42,9 @@
         margin-right: 9px;
     }
 
-    &__btn-title {
-    }
-
     &__content {
         width: calc(60% - 80px);
         margin-left: 80px;
-    }
-
-    &__content-item {
     }
 
     &__img {

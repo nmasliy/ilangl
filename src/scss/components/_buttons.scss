@@ -45,20 +45,23 @@
     &--outline {
         border-color: $white;
     }
-
-    &--hover-white {
-        &:hover {
-            border-color: transparent;
-            background-color: $white;
-            color: $secondary;
-        }
-    }
     
-    &--hover-secondary {
-        &:hover {
-            background-color: $secondary;
-            color: $white;
+    @media screen and (min-width: $mobileBreakpoint)  {
+        &--hover-white {
+            &:hover {
+                border-color: transparent;
+                background-color: $white;
+                color: $secondary;
+            }
         }
+        
+        &--hover-secondary {
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    
     }
 
     &--wide {
@@ -74,7 +77,6 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
     color: $secondary;
     cursor: pointer;
 

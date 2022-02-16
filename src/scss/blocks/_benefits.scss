@@ -17,6 +17,20 @@
         padding: 42px 55px 45px 55px;
         border-radius: 10px; 
         width: calc(50% - 20px);
+
+        
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .35s ease;
+            .benefits__icon {
+                transition: .35s ease;
+            }
+            &:hover {
+                background-color: #DFECFF;
+                .benefits__icon {
+                    border-color: #E7F1FF;
+                }
+            }
+        }
     }
 
     &__icon {
@@ -26,10 +40,11 @@
         width: 60px;
         height: 60px;
         padding: 5px;
-        background: $white;
-        border: 7px solid rgba(255, 255, 255, 0.25);
+        background-color: $white;
+        border: 7px solid transparent;
         margin-bottom: 20px;
         border-radius: 50%;
+
         &--big {
 
         }

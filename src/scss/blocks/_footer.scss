@@ -16,12 +16,21 @@
     &__form {
         max-width: 442px;
         width: 100%;
+        margin-left: 20px;
+
         form {
             display: flex;
             margin-bottom: 12px;
         }
     }
 
+    &__mob-caption {
+        display: none;
+        font-size: 10px;
+        color: rgba($white, .5);
+        margin-bottom: 45px;
+    }
+    
     &__input {
         font-size: 14px;
         line-height: normal;
@@ -29,6 +38,7 @@
         background-color: $white;
         width: 100%;
         color: $main;
+        border-radius: 3px 0px 0px 3px;
         &::placeholder {
             color: rgba($main, .5);
         }
@@ -39,6 +49,7 @@
         padding: 12px 34px;
         font-weight: 600;
         background-color: $secondary;
+        border-radius: 0px 3px 3px 0px;
         
         @media screen and (min-width: $mobileBreakpoint) {
             transition: .35s ease;
@@ -140,8 +151,5 @@
     &__bottom-link {
         margin: 0 14px;
         text-decoration: underline;
-    }
-
-    &__copy {
     }
 }
