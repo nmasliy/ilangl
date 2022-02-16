@@ -1,7 +1,7 @@
 document.body.classList.add('preload');
 
 window.addEventListener('DOMContentLoaded', function() {
-    function isWebp() {
+    function initWebp() {
         function testWebP(callback) {
             var webP = new Image();
             webP.onload = webP.onerror = function () {
@@ -278,7 +278,7 @@ window.addEventListener('DOMContentLoaded', function() {
         da.init();
     }
 
-    isWebp();
+    initWebp();
     disableTransitionBeforeLoad();
     initDynamicAdapt();
     initMenu();

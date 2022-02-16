@@ -18,16 +18,13 @@ export const scss = () => {
 		.pipe(
 			app.plugins.gulpIf(
 				app.isBuild,
-				groupCssMediaQueries()
+				webpCss({})
 			)
 		)
 		.pipe(
 			app.plugins.gulpIf(
 				app.isBuild,
-				webpCss({
-					webpClass: 'webp',
-					noWebpClass: 'no-webp',
-				})
+				groupCssMediaQueries()
 			)
 		)
 		.pipe(
