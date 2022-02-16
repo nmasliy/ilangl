@@ -15,12 +15,7 @@ export const scss = () => {
 		.pipe(sass({
 			outputStyle: 'expanded',
 		}))
-		.pipe(
-			app.plugins.gulpIf(
-				app.isBuild,
-				webpCss({})
-			)
-		)
+		.pipe(webpCss({}))
 		.pipe(
 			app.plugins.gulpIf(
 				app.isBuild,

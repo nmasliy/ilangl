@@ -2711,3 +2711,11 @@ p:last-child {
     padding: 36px 20px;
   }
 }
+.webp .hero { background: url(../img/bg-elem-1.svg) top left no-repeat, url(../img/bg-elem-2.svg) bottom 19px right no-repeat, url(../img/hero-bg.webp) center/cover no-repeat; }
+.webp .lead { background: url(../img/bg-elem-1.svg) top left no-repeat, url(../img/bg-elem-2.svg) bottom 19px right no-repeat, url(../img/hero-bg.webp) center/cover no-repeat; }
+@media screen and (max-width: 768px) {
+  .webp .lead { background: url(../img/bg-elem-3.svg) top 10px left/133px no-repeat, url(../img/bg-elem-2.svg) bottom 0 right 22px/110px no-repeat, url(../img/hero-bg.webp) right/cover no-repeat; }
+}
+@media screen and (max-width: 768px) {
+  .webp .hero { background: url(../img/bg-elem-1.svg) top left/133px no-repeat, url(../img/hero-bg.webp) right/cover no-repeat; }
+}
