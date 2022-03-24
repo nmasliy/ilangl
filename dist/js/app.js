@@ -156,8 +156,172 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function initTabs() {
         const $tabs = document.querySelectorAll('[data-tab-button]');
+        const $container = document.querySelector('[data-tab-container]');
+        const $howTabsButtons = document.querySelectorAll('.how-tabs__btn');
+        const $integrationsTabs = document.querySelector('.integrations-tabs');
+        const $questionsTabs = document.querySelector('.questions__tabs-buttons');
+
+        // На моб. табы превращаются в аккордеон
+        if ($howTabsButtons.length > 0 && window.innerWidth <= 768) initHowAccordion();
+        else if ($integrationsTabs) initIntegrationsTabs();
+        else if ($questionsTabs) initQuestionsTabs();
+        else if ($container) initDefaultTabs();
+
+        function initHowAccordion() {
+            $howTabsButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    btn.classList.toggle('active');
+                    btn.nextElementSibling.classList.toggle('active');
+                })
+            })
+        }
+        function initIntegrationsTabs() {
+            const $integrationButtons = document.querySelectorAll('.integrations-tabs__buttons .tabs-buttons__item');
+
+            $integrationButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
     
-        if (document.querySelector('[data-tab-container]')) {
+                    const activeTab = document.querySelector('[data-tab-button].active');
+                    const items = document.querySelectorAll('[data-tab-content]');
+                    const id = btn.getAttribute('data-tab');
+                    activeTab.classList.remove('active');
+                    if (id === 'all') {
+                        items.forEach(item => {
+                            item.classList.add('active');
+                        })
+                    } else {
+                        items.forEach(item => {
+                            item.classList.remove('active');
+                        })
+                    }
+                    
+                    items.forEach(item => {
+                        if (item.dataset.tab === id) item.classList.add('active');
+                    })
+                    btn.classList.add('active');
+                })
+            })
+        }
+        function initQuestionsTabs() {
+            const $questionsButtons = document.querySelectorAll('.questions__tabs-buttons .tabs-buttons__item');
+            const $questionsBtn = document.querySelector('.questions__btn');
+            const $wrapper = document.querySelector('.questions__list--max');
+
+            let $items = document.querySelectorAll('.questions__item');
+            
+            if ($wrapper.classList.contains('active')) {
+                $items.forEach(item => item.classList.add('active'));
+            }
+
+            let $activeItems = document.querySelectorAll('.questions__item.active');
+            
+            if ($activeItems.length > 6) {
+                $questionsBtn.style.display = 'block';
+                $activeItems.forEach((item, i) => {
+                    if (i > 5) {
+                        item.style.display = 'none';
+                    } else {
+                        item.style.display = '';
+                    }
+                })
+            }
+
+            $questionsButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+    
+                    const activeTab = document.querySelector('[data-tab-button].active');
+                    const items = document.querySelectorAll('[data-tab-content]');
+                    const id = btn.getAttribute('data-tab');
+                    activeTab.classList.remove('active');
+
+                    if (id === 'all') {
+                        items.forEach(item => {
+                            item.classList.add('active');
+                        })
+                    } else {
+                        items.forEach(item => {
+                            item.classList.remove('active');
+                        })
+                    }
+                    
+                    items.forEach(item => {
+                        item.style.border = '';
+                        if (item.dataset.tab === id) item.classList.add('active');
+                    })
+                    btn.classList.add('active');
+
+                    const $firstActiveItem = document.querySelector('.questions__item.active');
+                    $firstActiveItem.style.border = 'none';
+
+                    $activeItems = document.querySelectorAll('.questions__item.active');
+
+                    if ($activeItems.length > 6) {
+                        $questionsBtn.style.display = 'block';
+                        showLess();
+                        $activeItems.forEach((item, i) => {
+                            if (i > 5) {
+                                $activeItems[i].style.display = 'none';
+                            } else {
+                                $activeItems[i].style.display = '';
+                            }
+                        })
+                    } else {
+                        $questionsBtn.style.display = '';
+                        $activeItems.forEach(item => item.style.display = '')
+                    }
+                })
+            })
+
+            initMoreQuestions();
+
+            const textMore = $questionsBtn.dataset.textMore;
+            const textLess = $questionsBtn.dataset.textLess;
+
+            function initMoreQuestions() {
+                if ($questionsBtn) {
+
+                    $questionsBtn.addEventListener('click', function(e) {
+                        if ($wrapper.classList.contains('all')) {
+                            showLess();
+                        } else {
+                            showMore();
+                        }
+                    })
+                }
+            }
+            
+            function showMore() {
+                $wrapper.classList.add('all');
+                $questionsBtn.textContent = textLess;
+                $activeItems.forEach(item => {
+                    item.style.display = '';
+                })
+            }
+            function showLess() {
+                $wrapper.classList.remove('all');
+                $questionsBtn.textContent = textMore;
+                if ($activeItems.length > 6) {
+                    $activeItems.forEach((item, i) => {
+                        if (i > 5) {
+                            item.style.display = 'none';
+                        } else {
+                            item.style.display = '';
+                        }
+                    })
+                } else if ($wrapper.classList.contains('active')) {
+                    $items.forEach((item, i) => {
+                        if (i > 5) {
+                            item.style.display = 'none';
+                        } else {
+                            item.style.display = '';
+                        }
+                    })
+                }
+            }
+        }
+        function initDefaultTabs() {
             $tabs.forEach(tab => {
                 tab.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -170,7 +334,19 @@ window.addEventListener('DOMContentLoaded', function() {
                         activeTab.classList.remove('active');
                         activeContent.classList.remove('active');
                     }
+
                     const content = document.querySelector('[data-tab-content][data-tab="'+id+'"]');
+
+                    // More features
+                    const allItems = document.querySelector('[data-tab-content].all');
+
+                    if (allItems && id !== 'all') {
+                        allItems.classList.remove('all');
+                        
+                        const $btn = document.querySelector('.features__more-btn');
+                        $btn.textContent = $btn.dataset.textMore;
+                    }
+                    // /More features
                     
                     tab.classList.add('active');
                     content.classList.add('active');
@@ -208,10 +384,12 @@ window.addEventListener('DOMContentLoaded', function() {
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.8,
+                        spaceBetween: 10,
                     },
-                    400: {
+                    450: {
                         slidesPerView: 2,
+                        spaceBetween: 20,
                     },
                     600: {
                         slidesPerView: 3,
@@ -251,6 +429,48 @@ window.addEventListener('DOMContentLoaded', function() {
             
         }
     }
+    
+    function initStepsSlider() {
+        if (document.querySelector('.steps__slider')) {
+            const current = document.querySelector(".steps__num--big");
+            const count = document.querySelector(".steps__num--small");
+            const slides = document.querySelectorAll(".steps__slider .swiper-slide");
+            const slideCount = slides.length;
+
+            let prefixCount;
+            let prefixCurrent;
+
+            const swiper = new Swiper('.steps__slider', {
+                pagination: {
+                    el: '.steps__pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.steps__btn--next',
+                    prevEl: '.steps__btn--prev',
+                },
+                breakpoints: {
+                    320: {
+                        autoHeight: true
+                    },
+                    768: {
+                        autoHeight: false
+                    },
+                },
+                on: {
+                    slideChange: setFraction
+                }
+            });
+
+            function setFraction() {
+                prefixCurrent = swiper.realIndex + 1 < 10 ? '0' : ''; 
+                prefixCount = slideCount < 10 ? '0' : ''; 
+                current.textContent = `${prefixCurrent}${swiper.realIndex + 1}`;
+                count.textContent = `/${prefixCount}${slideCount}`;
+            }
+            setFraction();
+        }
+    }
 
     function initSeoBox() {
         const $btn = document.querySelector('.seo-box__btn');
@@ -273,9 +493,145 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function initMoreFeatures() {
+        const $btn = document.querySelector('.features__more-btn');
+        const $wrapper = document.querySelector('.features__content');
+
+        if ($btn) {
+            const textMore = $btn.dataset.textMore;
+            const textLess = $btn.dataset.textLess;
+
+            $btn.addEventListener('click', function(e) {
+                if ($wrapper.classList.contains('all')) {
+                    $wrapper.classList.remove('all');
+                    $btn.textContent = textMore;
+                } else {
+                    $wrapper.classList.add('all');
+                    $btn.textContent = textLess;
+                }
+            })
+        }
+    }
+
     function initDynamicAdapt() {
         const da = new DynamicAdapt("max");  
         da.init();
+    }
+
+    function initHints() {
+        const $hintButtons = document.querySelectorAll('.plan__key svg');
+
+        if ($hintButtons.length > 0) {
+            $hintButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const activeHint = document.querySelector('.plan__key.active');
+                    if (activeHint) activeHint.classList.remove('active');
+
+                    btn.closest('.plan__key').classList.add('active');
+                })
+            })
+            document.body.addEventListener('click', function(e) {
+                if (!e.target.closest('.plan__key-inner') || e.target.closest('.plan__hint>img')) {
+                    const activeHint = document.querySelector('.plan__key.active');
+                    if (activeHint) activeHint.classList.remove('active');
+                }
+            })
+        }
+    }
+
+    function initPricingCalculator() {
+            const $slider = document.querySelector('.pricing-calc__slider-field')
+            const min = 0;
+            const max = 100000;
+    
+            if ($slider) {
+                const slider = noUiSlider.create($slider, {
+                    start: [max / 2],
+                    step: 1,
+                    connect: [true, false],
+                    range: {
+                        'min': min,
+                        'max': max
+                    }
+                });
+        
+                slider.on('update', function (values, handle) {
+                    // console.log(values[0]);
+                });
+            }
+        
+    }
+
+    function initArticlePage() {
+        function initCopyButtons() {
+            const $items = document.querySelectorAll('.article__socials-copy a');
+    
+            if ($items.length > 0) {
+                $items.forEach(item => {
+                    item.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        navigator.clipboard.writeText(item.href);
+                    })
+                })
+            }
+        }
+
+        function initSocialsMenu() {
+            const $socialsBtn = document.querySelector('.article__socials-btn');
+
+            if ($socialsBtn) {
+                $socialsBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if ($socialsBtn.classList.contains('active')) {
+                        $socialsBtn.closest('.article__socials-menu').classList.remove('active');
+                    }
+                    else {
+                        $socialsBtn.closest('.article__socials-menu').classList.add('active');
+                    }
+                })
+                document.body.addEventListener('click', function(e) {
+                    if (!e.target.closest('.article__socials-btn') || e.target.closest('.article__socials-btn.active')) {
+                        $socialsBtn.closest('.article__socials-menu').classList.remove('active');
+                    }
+                })
+            }
+        }
+
+        initCopyButtons();
+        initSocialsMenu();
+    }
+
+    function initMoreReviews() {
+        const $btn = document.querySelector('.reviews__more-btn');
+        const $wrapper = document.querySelector('.reviews-page__items');
+
+        if ($btn) {
+            const textMore = $btn.dataset.textMore;
+            const textLess = $btn.dataset.textLess;
+
+            $btn.addEventListener('click', function(e) {
+                if ($wrapper.classList.contains('all')) {
+                    $wrapper.classList.remove('all');
+                    $btn.textContent = textMore;
+                } else {
+                    $wrapper.classList.add('all');
+                    $btn.textContent = textLess;
+                }
+            })
+        }
+    }
+
+    function initStarsRating() {
+        const $starsItems = document.querySelectorAll('.star-rating');
+
+        if ($starsItems.length > 0) {
+            $starsItems.forEach(item => {
+                var starRatingControl = new StarRating(item, {
+                    maxStars: 5,
+                    tooltip: null
+                });
+            })
+        }
     }
 
     initWebp();
@@ -289,4 +645,11 @@ window.addEventListener('DOMContentLoaded', function() {
     initIntegrationsSlider();
     initReviewsSlider();
     initSeoBox();
+    initMoreFeatures();
+    initStepsSlider();
+    initPricingCalculator();
+    initArticlePage();
+    initMoreReviews();
+    initStarsRating();
+    initHints();
 })

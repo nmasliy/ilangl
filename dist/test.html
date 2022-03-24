@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="files/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="files/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="files/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="files/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="files/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="files/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="files/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="files/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="files/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="files/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+    <link rel="manifest" href="files/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -128,7 +145,19 @@
         <div class="page test">
             <div class="container test">
                 <h1>Страницы:</h1>
-                <div class="done"><a href="index.html">Главная</a></div>
+                <div class="done"><a href="index.html">Home</a></div>
+                <div class="done"><a href="features.html">Features</a></div>
+                <div class="done"><a href="why.html">Why iLangL</a></div>
+                <div class="done"><a href="how.html">How it works</a></div>
+                <div class="done"><a href="integrations.html">Integrations</a></div>
+                <div class="done"><a href="pricing.html">Pricing</a></div>
+                <div class="done"><a href="faq.html">Faq</a></div>
+                <div class="done"><a href="tutorials.html">Tutorials</a></div>
+                <div class="done"><a href="blog.html">Blog</a></div>
+                <div class="done"><a href="post.html">Blog post</a></div>
+                <div class="done"><a href="contacts.html">Contacts</a></div>
+                <div class="done"><a href="reviews.html">Reviews</a></div>
+                <div class="done"><a href="registration.html">Registration</a></div>
                 <hr>
                 <h1>Модалки:</h1>
                 <div><a href="#" data-micromodal-trigger="modal-review">Modal Review</a></div>
@@ -140,8 +169,8 @@
         <div class="footer__inner">
             <div class="footer__top">
                 <div class="footer__titles">
-                    <div class="footer__title title title--md">Resources and insights</div>
-                    <div class="footer__subtitle">The latest industry news, interviews and resources.</div>
+                    <h3 class="footer__title title title--md">Sign up for our Newsletter</h3>
+                    <h4 class="footer__subtitle">Be the first to get updates and insights</h4>
                 </div>
                 <div class="footer__form">
                     <form action="#">
@@ -159,13 +188,6 @@
                         </div>
                         <div class="footer__mob-caption">Interactive Language Localization</div>
                         <ul class="footer__socials">
-                            <li>
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.2918 18.1246C13.8371 18.1246 17.9652 11.8719 17.9652 6.45118C17.9652 6.2754 17.9613 6.09572 17.9535 5.91993C18.7566 5.33918 19.4496 4.61985 20 3.79572C19.2521 4.12847 18.458 4.34579 17.6449 4.44025C18.5011 3.92706 19.1421 3.12086 19.4492 2.17111C18.6438 2.64843 17.763 2.98514 16.8445 3.16681C16.2257 2.50927 15.4075 2.0739 14.5164 1.92801C13.6253 1.78212 12.711 1.93384 11.9148 2.35971C11.1186 2.78559 10.4848 3.46189 10.1115 4.28406C9.73825 5.10623 9.64619 6.02848 9.84961 6.90822C8.21874 6.82638 6.62328 6.40272 5.16665 5.66472C3.71002 4.92671 2.42474 3.89083 1.39414 2.62423C0.870333 3.52734 0.710047 4.596 0.945859 5.61304C1.18167 6.63008 1.79589 7.51917 2.66367 8.09962C2.01219 8.07894 1.37498 7.90353 0.804688 7.5879V7.63868C0.804104 8.58643 1.13175 9.50512 1.73192 10.2386C2.3321 10.9721 3.16777 11.4751 4.09687 11.6621C3.49338 11.8272 2.85999 11.8513 2.2457 11.7324C2.50788 12.5475 3.01798 13.2604 3.70481 13.7716C4.39164 14.2828 5.22093 14.5668 6.07695 14.584C4.62369 15.7256 2.82848 16.3447 0.980469 16.3418C0.652739 16.3413 0.325333 16.3212 0 16.2817C1.87738 17.4861 4.06128 18.1258 6.2918 18.1246Z" fill="white"/>
-                                    </svg>
-                                </a>
-                            </li>
                             <li>
                                 <a href="#">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,15 +210,12 @@
                             <li><a href="#">How it works</a></li>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Integrations</a></li>
-                            <li><a href="#">Documentation</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
                         <ul class="footer__list primary-list">
-                            <li><a href="#">Tutorials</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -207,7 +226,7 @@
                             </div>
                             <div class="footer__contacts-info">
                                 <div class="footer__contacts-title">Ukraine</div>
-                                <div class="footer__contacts-text">Kiev, st. Vadim Getman 1B 03057</div>
+                                <div class="footer__contacts-text">Kyiv, Vadim Getman 1B 03057</div>
                             </div>
                         </div>
                         <div class="footer__contacts-item">
@@ -245,8 +264,8 @@
                         <div class="reviews__item-head">
                             <div class="reviews__img">
                                 <picture>
-                                    <source srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" type="image/webp">
-                                    <img src="img/reviews-2.png" srcset="img/reviews-2.png 1x, img/reviews-2@2x.png 2x" alt="">
+                                    <source srcset="img/reviews-1@2x.webp 1x, img/reviews-1@2x.webp 2x" type="image/webp">
+                                    <img src="img/reviews-1@2x.png" srcset="img/reviews-1@2x.png 1x, img/reviews-1@2x.png 2x" alt="">
                                 </picture>
                             </div>
                             <div class="reviews__info">

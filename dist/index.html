@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="files/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="files/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="files/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="files/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="files/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="files/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="files/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="files/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="files/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="files/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+    <link rel="manifest" href="files/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -107,13 +124,13 @@
 </header>
             <div class="page">
                 <main class="main">
-                    <section class="hero hero-home">
+                    <section class="hero">
                         <div class="container">
                             <div class="hero__inner">
                                 <div class="hero__content">
                                     <h1 class="title title--lg hero__title">Top localization platform to automate website translations.</h1>
-                                    <div class="hero__text">
-                                        Expand into new markets by localization automation. <br> Connect your website to a translation platform via iLangL. 
+                                    <div class="hero__text hero__text--home">
+                                        Expand into new markets by localization automation. Connect your website to a translation platform via iLangL. 
                                     </div>
                                     <div class="hero__buttons" data-da=".hero__inner,768,last">
                                         <a href="#" class="btn btn--default btn--hover-white hero__btn">Get started</a>
@@ -130,14 +147,14 @@
                                 <div class="hero__img hero-home__img">
                                     <div class="hero__img-forward">
                                         <picture>
-                                            <source srcset="img/hero-home.webp 1x, img/hero-home@2x.webp 2x" type="image/webp">
-                                            <img width="713" height="409" src="img/hero-home.png" srcset="img/hero-home.png 1x, img/hero-home@2x.png 2x" alt="">
+                                            <source srcset="img/hero-home@2x.webp 1x, img/hero-home@2x.webp 2x" type="image/webp">
+                                            <img width="706" height="361" src="img/hero-home@2x.png" srcset="img/hero-home@2x.png 1x, img/hero-home@2x.png 2x" alt="">
                                         </picture>
                                     </div>
                                     <div class="hero__img-back">
                                         <picture>
-                                            <source srcset="img/hero-home.webp 1x, img/hero-home@2x.webp 2x" type="image/webp">
-                                            <img width="713" height="409" src="img/hero-home.png" srcset="img/hero-home.png 1x, img/hero-home@2x.png 2x" alt="">
+                                            <source srcset="img/hero-home@2x.webp 1x, img/hero-home@2x.webp 2x" type="image/webp">
+                                            <img width="706" height="361" src="img/hero-home@2x.png" srcset="img/hero-home@2x.png 1x, img/hero-home@2x.png 2x" alt="">
                                         </picture>
                                     </div>
                                 </div>
@@ -148,7 +165,7 @@
                     <section class="benefits section">
                         <div class="container">
                             <div class="benefits__inner">
-                                <h1 class="benefits__title title">Benefits</h1>
+                                <h2 class="benefits__title title">Benefits</h2>
                                 <div class="benefits__subtitle subtitle">iLangL technology connects content management systems and CAT tools to speed up your international translations.</div>
                                 <ul class="benefits__list">
                                     <li class="benefits__item">
@@ -195,7 +212,7 @@
                     <section class="integrations section">
                         <div class="container">
                             <div class="integrations__inner">
-                                <h1 class="integrations__title title">Integrations</h1>
+                                <h2 class="integrations__title title">Integrations</h2>
                                 <div class="integrations__head">
                                     <div class="integrations__subtitle subtitle">At the moment, we offer five CMS connectors and two CAT tools integrations. Use iLangL integration connectors to quickly transfer the content between the content management systems and translation platforms and reach your marketing goals in a flash.</div>
                                     <a href="#" class="integrations__link btn-link">
@@ -210,19 +227,16 @@
                                                 <img src="img/optimizely.svg" alt="">
                                             </div>
                                             <div class="integrations__item swiper-slide">
-                                                <img src="img/sitecore.svg" alt="">
-                                            </div>
-                                            <div class="integrations__item swiper-slide">
-                                                <picture>
-                                                    <source srcset="img/contentful.webp 1x, img/contentful@2x.webp 2x" type="image/webp">
-                                                    <img src="img/contentful.png" srcset="img/contentful.png 1x, img/contentful.png@2x 2x" alt="">
-                                                </picture>
-                                            </div>
-                                            <div class="integrations__item swiper-slide">
                                                 <img src="img/memoq.svg" alt="">
                                             </div>
                                             <div class="integrations__item swiper-slide">
-                                                <img src="img/memsource.svg" alt="">
+                                                <img src="img/sitecore.svg" alt="">
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <img src="img/contentful.svg" alt="">
+                                            </div>
+                                            <div class="integrations__item swiper-slide">
+                                                <img width="190" src="img/memsource.svg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -249,7 +263,7 @@
                     <section class="reviews section">
                         <div class="container">
                             <div class="reviews__inner">
-                                <h1 class="reviews__title title">Reviews</h1>
+                                <h2 class="reviews__title title">Reviews</h2>
                                 <div class="reviews__subtitle subtitle">We simplify the localization process for our clients. What do customers say about our services?</div>
                                 <div class="reviews__slider-wrapper">
                                     <div class="reviews__slider swiper">
@@ -312,25 +326,49 @@
                                                 <div class="reviews__item-head">
                                                     <div class="reviews__img">
                                                         <picture>
-                                                            <source srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" type="image/webp">
-                                                            <img src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" alt="">
+                                                            <source srcset="img/reviews-3.webp 1x" type="image/webp">
+                                                            <img src="img/reviews-3.png" alt="">
                                                         </picture>
                                                     </div>
                                                     <div class="reviews__info">
-                                                        <div class="reviews__name">Jasmin Schneider</div>
-                                                        <div class="reviews__position">Operations Director at The Translation People</div>
+                                                        <div class="reviews__name">Samantha Brazel</div>
+                                                        <div class="reviews__position">Project Manager at Webcertain</div>
                                                         <div class="reviews__rating">
                                                             <ul>
                                                                 <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
                                                                 <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
                                                                 <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
                                                                 <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
-                                                                <li><img width="22" height="22" src="img/star.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="reviews__text">We have been working with iLangl for quite some time now, and I have always found their service and Drupal connector to be impeccable. I am particularly impressed by their helpdesk team who are very knowledgeable, efficient and responsive. I would not hesitate to recommend them.</div>
+                                                <div class="reviews__text">We sourced iLangL when researching connector solutions for bulk website translations & continuous delivery. We found iLangL’s approach to be flexible, customisable and cost effective. We look forward to continuing our partnership.</div>
+                                            </div>
+                                            <div class="reviews__item swiper-slide">
+                                                <div class="reviews__item-head">
+                                                    <div class="reviews__img">
+                                                        <picture>
+                                                            <source srcset="img/reviews-4.webp 1x" type="image/webp">
+                                                            <img src="img/reviews-4.png" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="reviews__info">
+                                                        <div class="reviews__name">Carolina Kühnemann</div>
+                                                        <div class="reviews__position">Marketing & Sales Manager at Translator Scandinavia</div>
+                                                        <div class="reviews__rating">
+                                                            <ul>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
+                                                                <li><img width="22" height="22" src="img/star-filled.svg" alt=""></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__text">I am very happy to work with iLangL and I appreciate our cooperation very much. What I like the most is that EpiServer connector really works, that the support is always there for me and my customer and that I’ve felt a personal commitment from iLangL team to make this work.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -357,8 +395,8 @@
                     <section class="lead section">
                         <div class="container">
                             <div class="lead__inner">
-                                <h1 class="lead__title title">It’s time to automate your translation process and shorten your time to market!</h1>
-                                <div class="lead__subtitle">Try our online demo platform for frees</div>
+                                <h2 class="lead__title title">It’s time to automate your translation process and shorten your time to market!</h2>
+                                <div class="lead__subtitle">Try our online demo platform for free</div>
                                 <div class="lead__buttons">
                                     <a href="#" class="btn btn--default btn--hover-white lead__btn">Get started</a>
                                     <a href="#" class="btn btn--flex btn--outline btn--hover-white lead__btn">
@@ -374,12 +412,12 @@
                         </div>
                     </section>
 
-                    <section class="how section">
+                    <section class="how-tabs-section section">
                         <div class="container">
                             <div class="how__inner">
-                                <h1 class="how__title title">How it works</h1>
-                                <div class="how__subtitle subtitle">iLangL Localization Hub is an advanced system that is easy to use. Let’s find out how it works. </div>
-                                <div class="how__tabs how-tabs" data-tab-container>
+                                <h2 class="how-tabs-section__title title">How it works</h2>
+                                <div class="how-tabs-section__subtitle subtitle">iLangL Localization Hub is an advanced system that is easy to use. Let’s find out how it works. </div>
+                                <div class="how-tabs" data-tab-container>
                                     <div class="how-tabs__buttons">
                                         <div class="how-tabs__item how-tabs__item--1">
                                             <div class="how-tabs__btn active" data-tab-button data-tab="1">
@@ -416,8 +454,8 @@
                                         <div class="how-tabs__content-item active" data-tab-content data-tab="1" data-da=".how-tabs__item--1,768,last">
                                             <div class="how-tabs__img">
                                                 <picture>
-                                                    <source srcset="img/how-works-tab-1.webp 1x, img/how-works-tab-1@2x.webp 2x" type="image/webp">
-                                                    <img width="656" height="367" src="img/how-works-tab-1.png" srcset="img/how-works-tab-1.png 1x, img/how-works-tab-1@2x.png 2x" alt="">
+                                                    <source srcset="img/how-works-tab-1.webp" type="image/webp">
+                                                    <img width="656" height="367" src="img/how-works-tab-1.png" alt="">
                                                 </picture>
                                             </div>
                                             <div class="how-tabs__text">
@@ -430,10 +468,13 @@
                                         </div>
                                         <div class="how-tabs__content-item" data-tab-content data-tab="2" data-da=".how-tabs__item--2,768,last">
                                             <div class="how-tabs__img">
-                                                <img width="656" height="367" src="img/how-works-tab-1.png" alt="">
+                                                <picture>
+                                                    <source srcset="img/how-works-tab-2.webp" type="image/webp">
+                                                    <img width="656" height="367" src="img/how-works-tab-2.png" alt="">
+                                                </picture>
                                             </div>
                                             <div class="how-tabs__text">
-                                                2With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                                In the Localization Hub, you can customize the translation workflows according to your localization process. Create separate services for particular needs, such as marketing translation, machine translation, etc.  
                                             </div>
                                             <a href="#" class="how-tabs__link btn-link">
                                                 <span>Get started</span>
@@ -442,10 +483,13 @@
                                         </div>
                                         <div class="how-tabs__content-item" data-tab-content data-tab="3" data-da=".how-tabs__item--3,768,last">
                                             <div class="how-tabs__img">
-                                                <img width="656" height="367" src="img/how-works-tab-1.png" alt="">
+                                                <picture>
+                                                    <source srcset="img/how-works-tab-3.webp" type="image/webp">
+                                                    <img width="656" height="367" src="img/how-works-tab-3.png" alt="">
+                                                </picture>
                                             </div>
                                             <div class="how-tabs__text">
-                                                3With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                                The system can identify the new content and send it to your language services providers’ translation tools automatically. 
                                             </div>
                                             <a href="#" class="how-tabs__link btn-link">
                                                 <span>Get started</span>
@@ -454,10 +498,13 @@
                                         </div>
                                         <div class="how-tabs__content-item" data-tab-content data-tab="4" data-da=".how-tabs__item--4,768,last">
                                             <div class="how-tabs__img">
-                                                <img width="656" height="367" src="img/how-works-tab-1.png" alt="">
+                                                <picture>
+                                                    <source srcset="img/how-works-tab-4.webp" type="image/webp">
+                                                    <img width="656" height="367" src="img/how-works-tab-4.png" alt="">
+                                                </picture>
                                             </div>
                                             <div class="how-tabs__text">
-                                                4With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                                The system can identify the translated jobs and send them to CMS automatically. Or, you can deliver the translated content manually in a batch. 
                                             </div>
                                             <a href="#" class="how-tabs__link btn-link">
                                                 <span>Get started</span>
@@ -466,10 +513,13 @@
                                         </div>
                                         <div class="how-tabs__content-item" data-tab-content data-tab="5" data-da=".how-tabs__item--5,768,last">
                                             <div class="how-tabs__img">
-                                                <img width="656" height="367" src="img/how-works-tab-1.png" alt="">
+                                                <picture>
+                                                    <source srcset="img/how-works-tab-5.webp" type="image/webp">
+                                                    <img width="656" height="367" src="img/how-works-tab-5.png" alt="">
+                                                </picture>
                                             </div>
                                             <div class="how-tabs__text">
-                                                5With our CMS connectors, we will link your website to the agency’s translation tool and ensure you receive automated translation service of excellent quality. 
+                                                You can deliver edits from translators until you are satisfied with the content translation service.   
                                             </div>
                                             <a href="#" class="how-tabs__link btn-link">
                                                 <span>Get started</span>
@@ -541,7 +591,7 @@
                         <div class="container container--sm">
                             <div class="lead-footer__inner">
                                 <div class="lead-footer__content">
-                                    <h3 class="lead-footer__title title">Manage your translations faster with Localization Hub.</h3>
+                                    <h2 class="lead-footer__title title">Manage your translations faster with Localization Hub.</h2>
                                     <div class="lead-footer__subtitle">Get in touch to discuss the connectors or <strong>try the platform for free! </strong></div>
                                     <div class="lead-footer__buttons">
                                         <a href="#" class="btn btn--default btn--hover-white lead-footer__btn">Get started</a>
@@ -569,8 +619,8 @@
         <div class="footer__inner">
             <div class="footer__top">
                 <div class="footer__titles">
-                    <div class="footer__title title title--md">Resources and insights</div>
-                    <div class="footer__subtitle">The latest industry news, interviews and resources.</div>
+                    <h3 class="footer__title title title--md">Sign up for our Newsletter</h3>
+                    <h4 class="footer__subtitle">Be the first to get updates and insights</h4>
                 </div>
                 <div class="footer__form">
                     <form action="#">
@@ -588,13 +638,6 @@
                         </div>
                         <div class="footer__mob-caption">Interactive Language Localization</div>
                         <ul class="footer__socials">
-                            <li>
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.2918 18.1246C13.8371 18.1246 17.9652 11.8719 17.9652 6.45118C17.9652 6.2754 17.9613 6.09572 17.9535 5.91993C18.7566 5.33918 19.4496 4.61985 20 3.79572C19.2521 4.12847 18.458 4.34579 17.6449 4.44025C18.5011 3.92706 19.1421 3.12086 19.4492 2.17111C18.6438 2.64843 17.763 2.98514 16.8445 3.16681C16.2257 2.50927 15.4075 2.0739 14.5164 1.92801C13.6253 1.78212 12.711 1.93384 11.9148 2.35971C11.1186 2.78559 10.4848 3.46189 10.1115 4.28406C9.73825 5.10623 9.64619 6.02848 9.84961 6.90822C8.21874 6.82638 6.62328 6.40272 5.16665 5.66472C3.71002 4.92671 2.42474 3.89083 1.39414 2.62423C0.870333 3.52734 0.710047 4.596 0.945859 5.61304C1.18167 6.63008 1.79589 7.51917 2.66367 8.09962C2.01219 8.07894 1.37498 7.90353 0.804688 7.5879V7.63868C0.804104 8.58643 1.13175 9.50512 1.73192 10.2386C2.3321 10.9721 3.16777 11.4751 4.09687 11.6621C3.49338 11.8272 2.85999 11.8513 2.2457 11.7324C2.50788 12.5475 3.01798 13.2604 3.70481 13.7716C4.39164 14.2828 5.22093 14.5668 6.07695 14.584C4.62369 15.7256 2.82848 16.3447 0.980469 16.3418C0.652739 16.3413 0.325333 16.3212 0 16.2817C1.87738 17.4861 4.06128 18.1258 6.2918 18.1246Z" fill="white"/>
-                                    </svg>
-                                </a>
-                            </li>
                             <li>
                                 <a href="#">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -617,15 +660,12 @@
                             <li><a href="#">How it works</a></li>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Integrations</a></li>
-                            <li><a href="#">Documentation</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
                         <ul class="footer__list primary-list">
-                            <li><a href="#">Tutorials</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -636,7 +676,7 @@
                             </div>
                             <div class="footer__contacts-info">
                                 <div class="footer__contacts-title">Ukraine</div>
-                                <div class="footer__contacts-text">Kiev, st. Vadim Getman 1B 03057</div>
+                                <div class="footer__contacts-text">Kyiv, Vadim Getman 1B 03057</div>
                             </div>
                         </div>
                         <div class="footer__contacts-item">
@@ -674,8 +714,8 @@
                         <div class="reviews__item-head">
                             <div class="reviews__img">
                                 <picture>
-                                    <source srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" type="image/webp">
-                                    <img src="img/reviews-2.png" srcset="img/reviews-2.png 1x, img/reviews-2@2x.png 2x" alt="">
+                                    <source srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" type="image/webp">
+                                    <img src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" alt="">
                                 </picture>
                             </div>
                             <div class="reviews__info">

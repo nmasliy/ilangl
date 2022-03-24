@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="files/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="files/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="files/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="files/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="files/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="files/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="files/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="files/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="files/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="files/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+    <link rel="manifest" href="files/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tutorials</title>
+</head>
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="./" class="header__logo logo">
+                <img width="111" src="img/logo.svg" alt="TON logo">
+            </a>
+            <div class="header__menu">
+                <nav class="header__navigation navigation">
+                    <ul>
+                        <li>
+                            <a href="#" class="navigation__list-title">
+                                <span>Why iLangL</span>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.48431 0.315719C8.82771 -0.0395204 9.38425 -0.0395204 9.73949 0.303878C9.91711 0.481498 10 0.706483 10 0.94331C10 1.16829 9.91711 1.39328 9.73949 1.55906L5.63055 5.69168C5.46477 5.85746 5.23979 5.95219 5.00296 5.95219C4.76613 5.95219 4.54115 5.85746 4.37537 5.69168L0.26643 1.55906C-0.08881 1.21566 -0.08881 0.659118 0.26643 0.303878C0.609828 -0.0395204 1.17821 -0.0395204 1.52161 0.315719L5.00296 3.80891L8.48431 0.315719Z" fill="#041A45"/>
+                                </svg>
+                            </a>
+                            <ul class="navigation__list">
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Integrations</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="navigation__list-title">
+                                <span>Resources</span>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.48431 0.315719C8.82771 -0.0395204 9.38425 -0.0395204 9.73949 0.303878C9.91711 0.481498 10 0.706483 10 0.94331C10 1.16829 9.91711 1.39328 9.73949 1.55906L5.63055 5.69168C5.46477 5.85746 5.23979 5.95219 5.00296 5.95219C4.76613 5.95219 4.54115 5.85746 4.37537 5.69168L0.26643 1.55906C-0.08881 1.21566 -0.08881 0.659118 0.26643 0.303878C0.609828 -0.0395204 1.17821 -0.0395204 1.52161 0.315719L5.00296 3.80891L8.48431 0.315719Z" fill="#041A45"/>
+                                </svg>
+                            </div>
+                            <ul class="navigation__list">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__login">
+                    <div class="header__login-img">
+                        <picture>
+                            <source srcset="img/header-login.webp 1x, img/header-login@2x.webp 2x" type="image/webp">
+                            <img width="28" height="28" src="img/header-login.png" srcset="img/header-login.png 1x, img/header-login@2x.png 2x" alt="">
+                        </picture>
+                    </div>
+                    <div class="header__login-name">Renata Wels</div>
+                    <a href="#" class="header__login-btn"><img src="img/login.svg" alt=""></a>
+                </div>
+                <div class="header__socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.55016 21.75C16.6045 21.75 21.5583 14.2467 21.5583 7.74186C21.5583 7.53092 21.5536 7.3153 21.5442 7.10436C22.5079 6.40746 23.3395 5.54425 24 4.5553C23.1025 4.9546 22.1496 5.21538 21.1739 5.32874C22.2013 4.71291 22.9705 3.74547 23.3391 2.60577C22.3726 3.17856 21.3156 3.58261 20.2134 3.80061C19.4708 3.01156 18.489 2.48912 17.4197 2.31405C16.3504 2.13899 15.2532 2.32105 14.2977 2.8321C13.3423 3.34314 12.5818 4.15471 12.1338 5.14131C11.6859 6.12792 11.5754 7.23462 11.8195 8.2903C9.86249 8.19209 7.94794 7.6837 6.19998 6.7981C4.45203 5.91249 2.90969 4.66944 1.67297 3.14952C1.0444 4.23324 0.852057 5.51565 1.13503 6.73609C1.418 7.95654 2.15506 9.02345 3.19641 9.71999C2.41463 9.69517 1.64998 9.48468 0.965625 9.10592V9.16686C0.964925 10.3041 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1931 3.43198 14.222 2.69484 14.0794C3.00945 15.0574 3.62157 15.9129 4.44577 16.5263C5.26997 17.1398 6.26512 17.4806 7.29234 17.5012C5.54842 18.8711 3.39417 19.6141 1.17656 19.6106C0.783287 19.61 0.390399 19.5859 0 19.5384C2.25286 20.9837 4.87353 21.7514 7.55016 21.75Z" fill="#1C9CEA"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z" fill="#0077B7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="#4867AA"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__close">
+                    <img width="16" height="16" src="img/close.svg" alt="Close">
+                </div>
+            </div>
+            <div class="header__buttons">
+                <a href="#" class="header__btn header__btn--login">Login</a>
+                <a href="#" class="btn btn--default btn--hover-secondary header__btn header__btn--signup">Sign up</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="header__overlay"></div>
+</header>
+            <div class="page">
+                <main class="main">
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <ul>
+                                <li><a href="#">Home page</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <section class="page-head tutorials-head">
+                        <div class="container">
+                            <div class="page-head__inner tutorials-head__inner">
+                                <h2 class="tutorials-head__title page-head__title title title--lg">Tutorials</h2>
+                                <h2 class="tutorials-head__subtitle page-head__subtitle subtitle subtitle--lg">Get quick tips in these bite-sized tutorial videos to help you and your team be successful in Ilangl</h2>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tutorials">
+                        <div class="container">
+                            <div class="tutorials__inner">
+                                <div class="tutorials__box">
+                                    <h2 class="tutorials__title title title--md">Project Tips and Tricks</h2>
+                                    <ul class="tutorials__list card-list">
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-1@2x.webp 1x, img/tutorials-1@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-1@2x.jpg" srcset="img/tutorials-1@2x.jpg 1x, img/tutorials-1@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-2@2x.webp 1x, img/tutorials-2@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-2@2x.jpg" srcset="img/tutorials-2@2x.jpg 1x, img/tutorials-2@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-3@2x.webp 1x, img/tutorials-3@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-3@2x.jpg" srcset="img/tutorials-3@2x.jpg 1x, img/tutorials-3@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tutorials__box">
+                                    <h2 class="tutorials__title title title--md">Project Tips and Tricks</h2>
+                                    <ul class="tutorials__list card-list">
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-3@2x.webp 1x, img/tutorials-3@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-3@2x.jpg" srcset="img/tutorials-3@2x.jpg 1x, img/tutorials-3@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-1@2x.webp 1x, img/tutorials-1@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-1@2x.jpg" srcset="img/tutorials-1@2x.jpg 1x, img/tutorials-1@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-2@2x.webp 1x, img/tutorials-2@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-2@2x.jpg" srcset="img/tutorials-2@2x.jpg 1x, img/tutorials-2@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tutorials__box">
+                                    <h2 class="tutorials__title title title--md">Project Tips and Tricks</h2>
+                                    <ul class="tutorials__list card-list">
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-2@2x.webp 1x, img/tutorials-2@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-2@2x.jpg" srcset="img/tutorials-2@2x.jpg 1x, img/tutorials-2@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-3@2x.webp 1x, img/tutorials-3@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-3@2x.jpg" srcset="img/tutorials-3@2x.jpg 1x, img/tutorials-3@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="tutorials__item card">
+                                            <a href="#" class="card__inner">
+                                                <div class="card__img">
+                                                    <picture>
+                                                        <source srcset="img/tutorials-1@2x.webp 1x, img/tutorials-1@2x.webp 2x" type="image/webp">
+                                                        <img width="400" height="240" src="img/tutorials-1@2x.jpg" srcset="img/tutorials-1@2x.jpg 1x, img/tutorials-1@2x.jpg 2x" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="card__info">
+                                                    <div class="card__title">Bill Walsh leadership lessons</div>
+                                                    <div class="card__text">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+                                                    <div class="card__foot">
+                                                        <div class="card__duration">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="8" cy="8" r="8" fill="white" fill-opacity="0.5"/>
+                                                                <circle cx="8.00108" cy="8.00016" r="6.34483" fill="white"/>
+                                                                <path d="M10.4766 8.00008L6.75242 10.1502L6.75243 5.84995L10.4766 8.00008Z" fill="#247DFF"/>
+                                                            </svg>
+                                                            <span>4 min</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+            <footer class="footer">
+    <div class="container container--sm">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__titles">
+                    <h3 class="footer__title title title--md">Sign up for our Newsletter</h3>
+                    <h4 class="footer__subtitle">Be the first to get updates and insights</h4>
+                </div>
+                <div class="footer__form">
+                    <form action="#">
+                        <input type="email" required placeholder="Enter your email" class="footer__input">
+                        <button class="footer__button">Subscribe</button>
+                    </form>
+                    <div class="footer__form-caption">We care about your data in our <a href="#">privacy policy</a></div>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <div class="footer__logo logo">
+                            <img src="img/logo-white.svg" width="160" height="57" alt="">
+                        </div>
+                        <div class="footer__mob-caption">Interactive Language Localization</div>
+                        <ul class="footer__socials">
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__list primary-list">
+                            <li><a href="#">Why iLangL</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__list primary-list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__contacts-item">
+                            <div class="footer__contacts-icon">
+                                <img src="img/location.svg" alt="">
+                            </div>
+                            <div class="footer__contacts-info">
+                                <div class="footer__contacts-title">Ukraine</div>
+                                <div class="footer__contacts-text">Kyiv, Vadim Getman 1B 03057</div>
+                            </div>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <div class="footer__contacts-icon">
+                                <img src="img/location.svg" alt="">
+                            </div>
+                            <div class="footer__contacts-info">
+                                <div class="footer__contacts-title">Netherlands</div>
+                                <div class="footer__contacts-text">Amsterdam, <br> Keizersgracht 391 A 1016 EJ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-links">
+                    <a href="#" class="footer__bottom-link">Terms of Use</a>
+                    <a href="#" class="footer__bottom-link">Privacy policy</a>
+                </div>
+                <div class="footer__copy">©2021-2022 All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <script src="js/dynamicAdapt.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/micromodal.min.js"></script>
+<script src="js/app.js"></script>
+    </body>
+</html>
